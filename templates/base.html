@@ -15,7 +15,7 @@
 
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
     {% endblock %}
 
     {% block extra_css %}
@@ -232,9 +232,10 @@
           </div>
         </li>
       </ul>
-      <!---------------------------- Start Sidebar Filter Products Bar------------------->
+      
     </nav>
 <!---------------------------- End Mobile Side Bar------------------->
+
     {% if messages %}
         <div class="message-container"></div>
     {% endif %}
@@ -245,11 +246,97 @@
     {% block content %}
     
     {% endblock %}
+  <!---------------------------- Start footer ------------------->
+<footer class="page-footer font-small blue pt-4">
 
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase">Footer Content</h5>
+        <p>CONTENT CONTENT CONTENT CONTENT</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h5 class="text-uppercase">Links</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Link 1</a>
+          </li>
+          <li>
+            <a href="#!">Link 2</a>
+          </li>
+          <li>
+            <a href="#!">Link 3</a>
+          </li>
+          <li>
+            <a href="#!">Link 4</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="row mt-5">
+    <div class="col-md-12 text-center">
+      <p class="copyright mx-1"> 2022 All rights reserved | This website was made with <i class="fas fa-heart"></i> by <a
+          href="https://github.com/arthurvguide" rel="noopener" target="_blank">arthurvguide</a>
+      </p>
+    </div>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!---------------------------- End footer ------------------->
     {% block postloadjs %}
     <script src="{% static 'js/base.js' %}"></script>
     {% endblock %}
-
+    
     
   </body>
 </html>

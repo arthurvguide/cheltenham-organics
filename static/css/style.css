@@ -2,7 +2,8 @@ html {
     height: 100%;
 
 }
-  
+/* --------  START CSS FOR THE BASE PAGE ---------*/
+
 /* -------- Start CSS style for the header ---------*/
   .form-control {
     height: calc(2.5rem + 2px);
@@ -189,3 +190,12 @@ html {
   }
 
   /* -------- End CSS style for the header ---------*/
+
+  /* --------  END CSS FOR THE BASE PAGE ---------*/
+
+  
+  /* --------  START CSS FOR THE INDEX PAGE ---------*/
+
+  .hero {
+    height: 500px;
+  }
