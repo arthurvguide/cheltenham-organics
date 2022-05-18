@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 html {
     height: 100%;
+    
 
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }
 /* --------  START CSS FOR THE BASE PAGE ---------*/
 
@@ -44,7 +50,7 @@ html {
   /* Extra large devices (large desktops, 1200px and up) */
   @media (min-width: 1200px) {
     .form-inline .form-control {
-      width: 600px;
+      width: 500px;
     }
   }
   .navbar .navbar-toggler {
