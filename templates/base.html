@@ -35,62 +35,76 @@
   </head>
   <body>
     <!---------------------------- Start Navigation Bar------------------->
-    <nav class="navbar navbar-expand-md  main-menu">
-      <div class="container">
-
-        <button type="button" id="sidebarCollapse" class="btn btn-link d-block d-md-none">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-        <a class="navbar-brand" href="#">
-          <img src="/media/logo.png" alt="">
-        </a>
-
-        <ul class="navbar-nav ml-auto d-block d-md-none">
-          <li class="list-inline-item">
-            <a class="text-black nav-link d-block d-lg-none">
-                <div class="text-center">
-                    <div><i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i></div>
-                    <p class="my-0">£0.00  
-                    </p>
-                </div>
-            </a>
-          </li>
-        </ul>
-
-        <div class="collapse navbar-collapse">
-          <form  method="GET" action="#" class="form-inline my-2 my-lg-0 mx-auto">
-            <input class="form-control" type="search" placeholder="Search our products..." aria-label="Search">
-            <button class="btn my-2 my-sm-0" type="submit">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
-          </form>
-
-          <ul class="navbar-nav">
-            <li class="list-inline-item">
-              <a class="text-black nav-link d-block">
-                  <div class="text-center">
-                      <div><i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i></div>
-                      <p class="my-0">£0.00  
-                      </p>
-                  </div>
-              </a>
-            </li>
-            <li class="nav-item ml-md-3">
-              <a class="text-black nav-link d-block">
-                <div class="text-center">
-                    <div><i class="fa-solid fa-user" aria-hidden="true"></i></div>
-                    <p class="my-0">My Account
-                    </p>
-                </div>
-            </a>
-            </li>
-          </ul>
-        </div>
-
+    <div class="col d-md-none">
+      <button type="button" id="sidebarCollapse" class="btn btn-link">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <div id="topnav" class="row bg-white pt-lg-2">
+      <div class="col-12 col-md-6  col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+          <a href="" class="nav-link main-logo-link">
+            <img src="/media/logo.png" alt="">
+          </a>
       </div>
-    </nav>
+      <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
+          <form method="GET" action="">
+              <div class="input-group w-100">
+                  <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+                  <div class="input-group-append">
+                      <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                          <span class="icon">
+                              <i class="fas fa-search"></i>
+                          </span>
+                      </button>
+                  </div>
+              </div>
+          </form>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-auto py-1 py-lg-0 d-none d-md-block">
+          <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+              <li class="list-inline-item dropdown">
+                  <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <div class="text-center">
+                          <div><i class="fas fa-user fa-lg"></i></div>
+                          <p class="my-0">My Account</p>
+                      </div>
+                  </a>
+              </li>
+              <li class="list-inline-item">
+                  <a class=" nav-link" href="">
+                      <div class="text-center">
+                          <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                          <p class="my-0">
+                            $0.00
+                          </p>
+                      </div>
+                  </a>
+              </li>
+          </ul>
+      </div>
+  </div>       
+    
 <!---------------------------- End Navigation Bar------------------->
+<div class="search-bar d-lg-none">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <form method="GET" action="">
+          <div class="input-group w-100">
+              <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
+              <div class="input-group-append">
+                  <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                      <span class="icon">
+                          <i class="fas fa-search"></i>
+                      </span>
+                  </button>
+              </div>
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!---------------------------- Start Desktop Filter Products Bar------------------->
     <nav class="navbar navbar-expand-md sub-menu">
@@ -99,7 +113,7 @@
           <ul class="navbar-nav mx-auto">
         
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -110,7 +124,7 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products type 1
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -121,7 +135,7 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products type 2
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -132,7 +146,7 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Products type 3
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -150,27 +164,22 @@
 <!---------------------------- End Desktop Filter Products Bar------------------->
 
 <!---------------------------- Start  Mobile Side Bar------------------->
-    <div class="search-bar d-block d-md-none">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <form class="form-inline mb-3 mx-auto">
-              <input class="form-control" type="search" placeholder="Search our products..." aria-label="Search">
-              <button class="btn btn-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
+
 
     <nav id="sidebar">
       <div class="sidebar-header">
         <div class="container">
-          <div class="row align-items-center">
-            <div class="col-10 pl-0">
-              <a class="btn" href="#"><i class="fa-solid fa-user"></i>My account</a>
-            </div>
-
+          <div class="row justify-content-around">
+            <div class="text-center">
+              <div><i class="fa-solid fa-user" aria-hidden="true"></i></div>
+              <p class="my-0">My Account
+              </p>
+          </div>
+          <div class="text-center">
+            <div><i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i></div>
+            <p class="my-0">£0.00  
+            </p>
+        </div>
             <div class="col-2 text-left">
               <button type="button" id="sidebarCollapseX" class="btn btn-link">
                 <i class="fa-solid fa-circle-xmark"></i>
@@ -178,22 +187,23 @@
             </div>
           </div>
         </div>
+        
       </div>
       <!---------------------------- Start Sidebar Filter Products Bar------------------->
       <ul class="list-unstyled components links">
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             All Products
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
             <a class="dropdown-item" href="#">Filter 1</a>
             <a class="dropdown-item" href="#">Filter 2</a>
             <a class="dropdown-item" href="#">Filter 3</a>
-            <a class="dropdown-item" href="#">TFilter 4</a>
+            <a class="dropdown-item" href="#">Filter 4</a>
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products type 1
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -204,7 +214,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products type 2
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -215,7 +225,7 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Products type 3
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">

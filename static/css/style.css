@@ -9,6 +9,13 @@ body {
     overflow-x: hidden;
 
 }
+
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
 /* --------  START CSS FOR THE BASE PAGE ---------*/
 
 /* -------- Start CSS style for the header ---------*/
@@ -19,7 +26,7 @@ body {
     line-height: 1.5;
     border-radius: 0.3rem;
   }
-  
+
   .form-inline .form-control {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -136,17 +143,6 @@ body {
     color: #000;
   }
   
-  #sidebar ul li a:hover {
-    color: #7386d5;
-    background: #fff;
-  }
-  
-  #sidebar ul li.active > a,
-  #sidebar a[aria-expanded="true"] {
-    color: #007bff;
-    background: #e6f2ff;
-    border-radius: 6px;
-  }
   
   a[data-toggle="collapse"] {
     position: relative;
@@ -158,14 +154,6 @@ body {
     top: 50%;
     right: 20px;
     transform: translateY(-50%);
-  }
-  
-  section {
-    padding: 6rem;
-    background: #e4e4e4;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
   }
   
   .overlay {
@@ -189,7 +177,6 @@ body {
   .search-bar {
     position: relative;
     z-index: 2;
-    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.1);
   }
   
   .search-bar .form-control {
