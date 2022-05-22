@@ -5,13 +5,17 @@
 
 {% block head_title %}{% trans "Signup" %}{% endblock %}
 
+{% block extra_css  %}
+<link rel="stylesheet" href="{% static 'css/accounts/accounts.css' %}">
+{% endblock %}
+
 {% block content %}
 <div class="text-center justify-content-center m-5 register-container">
 <div class="row justify-content-center mt-5">
   <h1>{% trans "Register now" %}</h1>
 </div>
 <div class="row justify-content-center">
-  <p>Craete an account with us</p>
+  <p>Enjoy the best on our website</p>
 </div>
 <div class="row justify-content-center">
   <form class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
@@ -20,7 +24,7 @@
     {% if redirect_field_value %}
     <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
     {% endif %}
-    <button type="submit">{% trans "Sign Up" %} &raquo;</button>
+    <button class= "btn" type="submit">{% trans "Sign Up" %} &raquo;</button>
   </form>
 </div>
 <div class="row justify-content-center mt-2">
@@ -29,4 +33,10 @@
 
 
 </div>
+{% endblock %}
+
+{% block postloadjs %}
+
+<script src="{% static 'js/accounts/signup.js' %}"></script>
+
 {% endblock %}
