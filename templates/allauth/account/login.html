@@ -6,7 +6,6 @@
 
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
-
 {% block content %}
 
 <div class="text-center justify-content-center m-5 login-container">
@@ -16,7 +15,7 @@
     </div>
   </div>
   <div class="row justify-content-center">
-    <p>Log in into your account</p>
+    <p>Log into your account</p>
   </div>
   <div class="row">
     <div class="col">
@@ -26,7 +25,7 @@
         {% if redirect_field_value %}
         <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="primaryAction" type="submit">{% trans "Sign In" %}</button>
+        <button class="btn primaryAction" type="submit">{% trans "Sign In" %}</button>
       </form>   
     </div>
   </div>
@@ -34,9 +33,15 @@
     <div class="col m-2">
       <p>{% blocktrans %}Don't have an account with us?
         <a href="{{ signup_url }}">Register</a>{% endblocktrans %}</p>
+        <a class="button secondaryAction" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
     </div>
   </div>
 </div>
 
 {% endblock %}
 
+{% block postloadjs %}
+
+<script src="{% static 'js/accounts/login.js' %}"></script>
+
+{% endblock %}

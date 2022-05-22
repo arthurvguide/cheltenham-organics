@@ -193,3 +193,18 @@ body {
   .hero {
     height: 500px;
   }
+
+/* -------- START CSS FILES FOR THE AUTHENTICATION PAGES ---------*/
+
+/* -------- SIGNUP PAGE ---------*/
+
+.signup input,
+.login input {
+    width: 250px;
+}
+
+#id_remember {
+    width: 20px;
+}
+
+/* -------- END CSS FILES FOR THE AUTHENTICATION PAGES ---------*/
