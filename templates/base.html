@@ -16,6 +16,8 @@
     {% block corecss %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <!-- Mail Chimp CSS-->
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css %}
@@ -35,6 +37,9 @@
   </head>
   <body>
     <!---------------------------- Start Navigation Bar------------------->
+    <header>
+
+
     <div class="col d-md-none">
       <button type="button" id="sidebarCollapse" class="btn btn-link">
         <i class="fa-solid fa-bars"></i>
@@ -43,7 +48,7 @@
     <div id="topnav" class="row pt-lg-2">
       <div class="col-12 col-md-6  col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
           <a href="" class="nav-link main-logo-link">
-            <img src="/media/logo.png" alt="">
+            <img src="/media/logo.png" alt="">  <!---FIXXXXXXXXXXXXX IT-->
           </a>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
@@ -265,6 +270,7 @@
       </ul>
       
     </nav>
+  </header>
 <!---------------------------- End Mobile Side Bar------------------->
 
     {% if messages %}
@@ -274,11 +280,53 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
-    
-    {% endblock %}
+    <main class="flex-shrink-0">
+      {% block content %}
+          <!-- Content Goes here -->
+      {% endblock content %}
+    </main>
+  
+
   <!---------------------------- Start footer ------------------->
-<footer class="page-footer font-small blue pt-4">
+<footer class="page-footer font-small  pt-4 fixed-bottom">
+
+  <!-- Newsletter signup form -->
+  <div class="newsletter mb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+<!-- Begin Mailchimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="https://gmail.us18.list-manage.com/subscribe/post?u=0cd147e97320fc91cfdaadc23&amp;id=780935124a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+	<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+<div class="mc-field-group">
+	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+</label>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+	<div id="mce-responses" class="clear foot">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div> 
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0cd147e97320fc91cfdaadc23_780935124a" tabindex="-1" value=""></div>
+        <div class="optionalParent">
+            <div class="clear foot">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Newsletter signup form -->
 
   <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
@@ -367,6 +415,8 @@
 <!---------------------------- End footer ------------------->
     {% block postloadjs %}
     <script src="{% static 'js/base.js' %}"></script>
+    <!--Mail Chimp JS -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
     {% endblock %}
     
     
