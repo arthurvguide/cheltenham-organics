@@ -47,8 +47,8 @@
     </div>
     <div id="topnav" class="row pt-lg-2">
       <div class="col-12 col-md-6  col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-          <a href="" class="nav-link main-logo-link">
-            <img src="/media/logo.png" alt="">  <!---FIXXXXXXXXXXXXX IT-->
+          <a href="{% url 'home' %}" class="nav-link main-logo-link">
+            CHELTENHAM ORGANICS <!---FIXXXXXXXXXXXXX IT-->
           </a>
       </div>
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
@@ -56,7 +56,7 @@
               <div class="input-group w-100">
                   <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
                   <div class="input-group-append">
-                      <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                      <button class="form-control btn  border border-black rounded-0" type="submit">
                           <span class="icon">
                               <i class="fas fa-search"></i>
                           </span>
@@ -110,7 +110,7 @@
           <div class="input-group w-100">
               <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
               <div class="input-group-append">
-                  <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                  <button class="form-control btn border border-black rounded-0" type="submit">
                       <span class="icon">
                           <i class="fas fa-search"></i>
                       </span>
@@ -288,47 +288,8 @@
   
 
   <!---------------------------- Start footer ------------------->
-<footer class="page-footer font-small  pt-4 fixed-bottom">
+<footer class="page-footer font-small  pt-4 ">
 
-  <!-- Newsletter signup form -->
-  <div class="newsletter mb-5">
-    <div class="container">
-      <div class="row">
-        <div class="col">
-<!-- Begin Mailchimp Signup Form -->
-
-<div id="mc_embed_signup">
-<form action="https://gmail.us18.list-manage.com/subscribe/post?u=0cd147e97320fc91cfdaadc23&amp;id=780935124a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-<div class="mc-field-group">
-	<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-</label>
-	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-</div>
-	<div id="mce-responses" class="clear foot">
-		<div class="response" id="mce-error-response" style="display:none"></div>
-		<div class="response" id="mce-success-response" style="display:none"></div>
-	</div> 
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0cd147e97320fc91cfdaadc23_780935124a" tabindex="-1" value=""></div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-            </div>
-        </div>
-    </div>
-</form>
-</div>
-
-<!--End mc_embed_signup-->
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Newsletter signup form -->
-
-  <!-- Footer Links -->
   <div class="container-fluid text-center text-md-left">
 
     <!-- Grid row -->
@@ -337,10 +298,37 @@
       <!-- Grid column -->
       <div class="col-md-6 mt-md-0 mt-3">
 
-        <!-- Content -->
-        <h5 class="text-uppercase">Footer Content</h5>
-        <p>CONTENT CONTENT CONTENT CONTENT</p>
+        <!-- Newsletter signup form -->
+        <div class="newsletter">
+      
+          <!-- Begin Mailchimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="https://gmail.us18.list-manage.com/subscribe/post?u=0cd147e97320fc91cfdaadc23&amp;id=780935124a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+          <div class="mc-field-group">
+            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+          </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+            <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div> 
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0cd147e97320fc91cfdaadc23_780935124a" tabindex="-1" value=""></div>
+                  <div class="optionalParent">
+                      <div class="clear foot">
+                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                      </div>
+                  </div>
+              </div>
+          </form>
+          </div>
 
+          <!--End mc_embed_signup-->
+    
+        </div>
       </div>
       <!-- Grid column -->
 
@@ -354,13 +342,13 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="#!">Home</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="#!">Privace Policy</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="#!">Term and Conditions</a>
           </li>
           <li>
             <a href="#!">Link 4</a>
@@ -402,9 +390,9 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="row mt-5">
+  <div class="row mt-3 pt-2 copyright ">
     <div class="col-md-12 text-center">
-      <p class="copyright mx-1"> 2022 All rights reserved | This website was made with <i class="fas fa-heart"></i> by <a
+      <p> 2022 All rights reserved | This website was made with <i class="fas fa-heart"></i> by <a
           href="https://github.com/arthurvguide" rel="noopener" target="_blank">arthurvguide</a>
       </p>
     </div>
