@@ -236,12 +236,24 @@ ul {
     height: 50px;
   }
 
+
  @media (min-width: 1024px) {
     .home-card-first {
       margin: 120px 100px 60px 100px;
     }
     .home-card-second {
       margin: 0px 100px 120px 100px;
+    }
+    .text-side {
+      padding: 45px;
+    }
+  }
+  @media (min-width: 1400px) {
+    .home-card-first {
+      margin: 120px 250px 60px 250px;
+    }
+    .home-card-second {
+      margin: 0px 250px 120px 250px;
     }
     .text-side {
       padding: 45px;
