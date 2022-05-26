@@ -2,135 +2,145 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
 
-    {% block meta %}
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    {% endblock %}
+<head>
 
-    {% block extra_meta %}
-    {% endblock %}
+  {% block meta %}
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  {% endblock %}
 
-    {% block corecss %}
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <!-- Mail Chimp CSS-->
-        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-    {% endblock %}
+  {% block extra_meta %}
+  {% endblock %}
 
-    {% block extra_css %}
-    {% endblock %}
+  {% block corecss %}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Mail Chimp CSS-->
+  <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
+  {% endblock %}
 
-    {% block corejs %}
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-        <script src="https://kit.fontawesome.com/07df6da6c2.js" crossorigin="anonymous"></script>
-    {% endblock %}
+  {% block extra_css %}
+  {% endblock %}
 
-    {% block extra_js %}
-    {% endblock %}
+  {% block corejs %}
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/07df6da6c2.js" crossorigin="anonymous"></script>
+  {% endblock %}
 
-    <title>Cheltenham Organics</title>
-  </head>
-  <body>
-    <!---------------------------- Start Navigation Bar------------------->
-    <header>
+  {% block extra_js %}
+  {% endblock %}
 
+  <title>Cheltenham Organics</title>
+</head>
 
+<body>
+  <header>
     <div class="col d-md-none">
       <button type="button" id="sidebarCollapse" class="btn btn-link">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
     <div id="topnav" class="row pt-lg-2">
-      <div class="col-12 col-md-6  col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-          <a href="{% url 'home' %}" class="nav-link main-logo-link">
-            CHELTENHAM ORGANICS <!---FIXXXXXXXXXXXXX IT-->
-          </a>
+      <div class="col-12 col-md-6  col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left logo">
+        <a href="{% url 'home' %}" class="nav-link ">
+          <h1> <span> C.Organics</span></h1>
+        </a>
       </div>
+
       <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 d-none d-lg-block">
-          <form method="GET" action="">
-              <div class="input-group w-100">
-                  <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-                  <div class="input-group-append">
-                      <button class="form-control btn  border border-black rounded-0" type="submit">
-                          <span class="icon">
-                              <i class="fas fa-search"></i>
-                          </span>
-                      </button>
-                  </div>
-              </div>
-          </form>
-      </div>
-      <div class="col-12 col-md-6 col-lg-4 my-auto py-1 py-lg-0 d-none d-md-block">
-          <ul class="list-inline list-unstyled text-center text-lg-right my-0">
-            <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="text-center">
-                      <div><i class="fas fa-user fa-lg"></i></div>
-                      <p class="my-0">My Account</p>
-                  </div>
-              </a>
-              <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                  {% if request.user.is_authenticated %}
-                      {% if request.user.is_superuser %}
-                          <a href="" class="dropdown-item">Product Management</a>
-                      {% endif %}
-                      <a href="" class="dropdown-item">My Profile</a>
-                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                  {% else %}
-                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                  {% endif %}
-              </div>
-          </li>
-              <li class="list-inline-item">
-                  <a class=" nav-link" href="">
-                      <div class="text-center">
-                          <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                          <p class="my-0">
-                            $0.00
-                          </p>
-                      </div>
-                  </a>
-              </li>
-          </ul>
-      </div>
-  </div>       
-    
-<!---------------------------- End Navigation Bar------------------->
-<div class="search-bar d-lg-none">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
         <form method="GET" action="">
           <div class="input-group w-100">
-              <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our site">
-              <div class="input-group-append">
-                  <button class="form-control btn border border-black rounded-0" type="submit">
-                      <span class="icon">
-                          <i class="fas fa-search"></i>
-                      </span>
-                  </button>
-              </div>
+            <input class="form-control border border-black rounded-0" type="text" name="q"
+              placeholder="Search our site">
+            <div class="input-group-append">
+              <button class="form-control btn  border border-black rounded-0" type="submit">
+                <span class="icon">
+                  <i class="fas fa-search"></i>
+                </span>
+              </button>
+            </div>
           </div>
-      </form>
+        </form>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4 my-auto py-1 py-lg-0 d-none d-md-block">
+        <ul class="list-inline list-unstyled text-center text-lg-right my-0">
+          <li class="list-inline-item dropdown">
+            <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="text-center">
+                <div><i class="fas fa-user fa-lg"></i></div>
+                <p class="my-0">My Account</p>
+              </div>
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+              {% if request.user.is_authenticated %}
+              {% if request.user.is_superuser %}
+              <a href="" class="dropdown-item">Product Management</a>
+              {% endif %}
+              <a href="" class="dropdown-item">My Profile</a>
+              <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+              {% else %}
+              <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+              <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+              {% endif %}
+            </div>
+          </li>
+          <li class="list-inline-item">
+            <a class=" nav-link" href="">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <p class="my-0">
+                  £0.00
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-  </div>
-</div>
 
-<!---------------------------- Start Desktop Filter Products Bar------------------->
+    <div class="search-bar d-lg-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <form method="GET" action="">
+              <div class="input-group w-100">
+                <input class="form-control border border-black rounded-0" type="text" name="q"
+                  placeholder="Search our site">
+                <div class="input-group-append">
+                  <button class="form-control btn border border-black rounded-0" type="submit">
+                    <span class="icon">
+                      <i class="fas fa-search"></i>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------------------------- APAGA ISSSSSSSSSSSSSSSSOOOOOOOOOOOOOOOOOOOO------------------->
+    <!---------------------------- Start Desktop Filter Products Bar------------------->
     <nav class="navbar navbar-expand-md sub-menu">
       <div class="container">
-        <div class="collapse navbar-collapse" id="navbar">
+        <div class="collapse navbar-collapse text-uppercase" id="navbar">
           <ul class="navbar-nav mx-auto">
-        
+
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 All Products
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -141,7 +151,8 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Products type 1
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -152,7 +163,8 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Products type 2
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -163,7 +175,8 @@
               </div>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
                 Products type 3
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -173,14 +186,14 @@
                 <a class="dropdown-item" href="#">Filter 4</a>
               </div>
             </li>
-            
+
           </ul>
         </div>
       </div>
     </nav>
-<!---------------------------- End Desktop Filter Products Bar------------------->
+    <!---------------------------- End Desktop Filter Products Bar------------------->
 
-<!---------------------------- Start  Mobile Side Bar------------------->
+    <!---------------------------- Start  Mobile Side Bar------------------->
 
 
     <nav id="sidebar">
@@ -188,30 +201,31 @@
         <div class="container">
           <div class="row justify-content-around align-items-center">
             <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <div class="text-center">
-                      <div><i class="fas fa-user fa-lg"></i></div>
-                      <p class="my-0">My Account</p>
-                  </div>
+              <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="text-center">
+                  <div><i class="fas fa-user fa-lg"></i></div>
+                  <p class="my-0">My Account</p>
+                </div>
               </a>
               <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                  {% if request.user.is_authenticated %}
-                      {% if request.user.is_superuser %}
-                          <a href="" class="dropdown-item">Product Management</a>
-                      {% endif %}
-                      <a href="" class="dropdown-item">My Profile</a>
-                      <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                  {% else %}
-                      <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                      <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                  {% endif %}
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="" class="dropdown-item">Product Management</a>
+                {% endif %}
+                <a href="" class="dropdown-item">My Profile</a>
+                <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                {% else %}
+                <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                {% endif %}
               </div>
-          </li>
-          <div class="text-center">
-            <div><i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i></div>
-            <p class="my-0">£0.00  
-            </p>
-        </div>
+            </li>
+            <div class="text-center">
+              <div><i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i></div>
+              <p class="my-0">£0.00
+              </p>
+            </div>
             <div class="col-2 text-left">
               <button type="button" id="sidebarCollapseX" class="btn btn-link">
                 <i class="fa-solid fa-circle-xmark"></i>
@@ -219,12 +233,13 @@
             </div>
           </div>
         </div>
-        
+
       </div>
       <!---------------------------- Start Sidebar Filter Products Bar------------------->
       <ul class="list-unstyled components links">
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             All Products
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -235,7 +250,8 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Products type 1
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -246,7 +262,8 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Products type 2
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -257,7 +274,8 @@
           </div>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
             Products type 3
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -268,145 +286,154 @@
           </div>
         </li>
       </ul>
-      
+
     </nav>
   </header>
-<!---------------------------- End Mobile Side Bar------------------->
+  <!---------------------------- End Mobile Side Bar------------------->
 
-    {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+  {% if messages %}
+  <div class="message-container"></div>
+  {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+  {% block page_header %}
+  {% endblock %}
 
-    <main class="flex-shrink-0">
-      {% block content %}
-          <!-- Content Goes here -->
-      {% endblock content %}
-    </main>
-  
+  <main class="flex-shrink-0">
+    {% block content %}
+    <!-- Content Goes here -->
+    {% endblock content %}
+  </main>
+
 
   <!---------------------------- Start footer ------------------->
-<footer class="page-footer font-small  pt-4 ">
-
-  <div class="container-fluid text-center text-md-left">
-
-    <!-- Grid row -->
-    <div class="row">
-
-      <!-- Grid column -->
-      <div class="col-md-6 mt-md-0 mt-3">
-
-        <!-- Newsletter signup form -->
-        <div class="newsletter">
-      
-          <!-- Begin Mailchimp Signup Form -->
-          <div id="mc_embed_signup">
-          <form action="https://gmail.us18.list-manage.com/subscribe/post?u=0cd147e97320fc91cfdaadc23&amp;id=780935124a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-              <div id="mc_embed_signup_scroll">
-            <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
-          <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-          <div class="mc-field-group">
-            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
-          </label>
-            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-          </div>
-            <div id="mce-responses" class="clear foot">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
-            </div> 
-              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_0cd147e97320fc91cfdaadc23_780935124a" tabindex="-1" value=""></div>
-                  <div class="optionalParent">
-                      <div class="clear foot">
-                          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                      </div>
+  <footer>
+      <!-- Grid row -->
+      <div class="row align-items-center text-center">
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <!-- Newsletter signup form -->
+          <div class="newsletter">
+            <!-- Begin Mailchimp Signup Form -->
+            <div id="mc_embed_signup">
+              <form
+                action="https://gmail.us18.list-manage.com/subscribe/post?u=0cd147e97320fc91cfdaadc23&amp;id=780935124a"
+                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+                target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                  <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+                  <div class="mc-field-group">
+                    <label for="mce-EMAIL">Email Address <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
                   </div>
-              </div>
-          </form>
+                  <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response" id="mce-success-response" style="display:none"></div>
+                  </div>
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                      name="b_0cd147e97320fc91cfdaadc23_780935124a" tabindex="-1" value=""></div>
+                  <div class="optionalParent">
+                    <div class="clear foot">
+                      <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style="background-color: #f58902;">
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!--End mc_embed_signup-->
           </div>
-
-          <!--End mc_embed_signup-->
-    
         </div>
+        <!-- Grid column -->
+        <hr class="clearfix w-100 d-md-none pb-3">
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3  links">
+          <!-- Links -->
+          <h5 class="text-uppercase">Links</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!">Home</a>
+            </li>
+            <li>
+              <a href="#!">Privace Policy</a>
+            </li>
+            <li>
+              <a href="#!">Term and Conditions</a>
+            </li>
+            <li>
+              <a href="#!">Link 4</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3  links">
+          <!-- Links -->
+          <h5 class="text-uppercase"> Social Links</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="https://www.facebook.com/" rel="noopener" target="_blank"><i
+                  class="fa-brands fa-facebook-square"></i> Facebook</a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" rel="noopener" target="_blank"><i
+                  class="fa-brands fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+              <a href="https://twitter.com/?lang=en" rel="noopener" target="_blank"><i
+                  class="fa-brands fa-twitter"></i> Twitter</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/?lang=en" rel="noopener" target="_blank"><i
+                  class="fa-brands fa-linkedin"></i> Linkedin</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
       </div>
-      <!-- Grid column -->
-
-      <hr class="clearfix w-100 d-md-none pb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase">Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="#!">Home</a>
-          </li>
-          <li>
-            <a href="#!">Privace Policy</a>
-          </li>
-          <li>
-            <a href="#!">Term and Conditions</a>
-          </li>
-          <li>
-            <a href="#!">Link 4</a>
-          </li>
-        </ul>
-
+      <!-- Grid row -->
+    <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="row mt-3 pt-2 copyright ">
+      <div class="col-md-12 text-center">
+        <p class=" p-2"> 2022 All rights reserved | This website was made with <i class="fas fa-heart"></i> by <a
+            href="https://github.com/arthurvguide" rel="noopener" target="_blank">arthurvguide</a>
+        </p>
       </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 mb-md-0 mb-3">
-
-        <!-- Links -->
-        <h5 class="text-uppercase"> Social Links</h5>
-
-        <ul class="list-unstyled">
-          <li>
-            <a href="https://www.facebook.com/" rel="noopener" target="_blank" ><i class="fa-brands fa-facebook-square"></i> Facebook</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/" rel="noopener" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/?lang=en" rel="noopener" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
-          </li>
-          <li>
-            <a href="https://linkedin.com/?lang=en" rel="noopener" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-          </li>
-        </ul>
-
-      </div>
-      <!-- Grid column -->
-
     </div>
-    <!-- Grid row -->
+    <!-- Copyright -->
 
-    
-  </div>
-  <!-- Footer Links -->
+  </footer>
+  <!---------------------------- End footer ------------------->
+  {% block postloadjs %}
+  <script src="{% static 'js/base.js' %}"></script>
 
-  <!-- Copyright -->
-  <div class="row mt-3 pt-2 copyright ">
-    <div class="col-md-12 text-center">
-      <p> 2022 All rights reserved | This website was made with <i class="fas fa-heart"></i> by <a
-          href="https://github.com/arthurvguide" rel="noopener" target="_blank">arthurvguide</a>
-      </p>
-    </div>
-  </div>
-  <!-- Copyright -->
+  <!--Mail Chimp JS -->
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+  <script type='text/javascript'>
+    (function ($) {
+      window.fnames = new Array();
+      window.ftypes = new Array();
+      fnames[0] = 'EMAIL';
+      ftypes[0] = 'email';
+      fnames[1] = 'FNAME';
+      ftypes[1] = 'text';
+      fnames[2] = 'LNAME';
+      ftypes[2] = 'text';
+      fnames[3] = 'ADDRESS';
+      ftypes[3] = 'address';
+      fnames[4] = 'PHONE';
+      ftypes[4] = 'phone';
+      fnames[5] = 'BIRTHDAY';
+      ftypes[5] = 'birthday';
+    }(jQuery));
+    var $mcj = jQuery.noConflict(true);
+  </script>
+  {% endblock %}
 
-</footer>
-<!---------------------------- End footer ------------------->
-    {% block postloadjs %}
-    <script src="{% static 'js/base.js' %}"></script>
-    <!--Mail Chimp JS -->
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-    {% endblock %}
-    
-    
-  </body>
+
+</body>
+
 </html>
