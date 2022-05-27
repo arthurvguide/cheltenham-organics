@@ -220,6 +220,21 @@ ul {
   .links h5 {
     color: #f58902;
   }
+  
+  @media (min-width: 768px) {
+    .footer {
+      margin: 0px 50px 0px 50px;
+    }
+  
+  }
+  @media (min-width: 1440px) {
+    .footer {
+      margin: 0px 80px 0px 80px;
+    }
+  
+  }
+
+
   /* -------- Footer ---------*/
  /* --------  CSS BASE PAGE ---------*/
 
