@@ -5,7 +5,7 @@
 {% block content %}
 <!---Jumbotron Section-->
 <section>
-  <div class="jumbotron jumbotron-fluid d-flex align-items-center mt-4 align-middle">
+  <div class="jumbotron jumbotron-fluid d-flex align-items-center mt-1 align-middle">
     <div class="container align-middle">
       <div class="row justify-content-center">
         <h1 class="text-uppercase">Organic Food</h1>
@@ -14,7 +14,7 @@
         <p>Delivered to your doorstep</p>
       </div>
       <div class="row justify-content-center">
-      <a href=""><button class="btn btn-black mt-5">SHOP NOW</button></a>
+      <a href="{% url 'products' %}"><button class="btn btn-black mt-5">SHOP NOW</button></a>
       </div>
     </div>
   </div>
@@ -25,10 +25,10 @@
 <section>
   <div class="row home-card-first align-items-center flex-column-reverse flex-md-row">
     <div class="col-12 col-md-6 img-side">
-        <img class="img-fluid" src="/media//index-img.farm.jpg" alt="">
+        <img class="img-fluid" src="/media//index-img.farm.jpg" alt="Organic Food Production">
     </div>
     <div class="col-12 col-md-6 text-side">
-      <h2>What is organic food?</h2>
+      <h2>Why organic food?</h2>
       <p class="text-justify">It is a system of farming and production of food that is natural and organic. Organic farmers are focused on producing food of high quality with methods that are beneficial to our entire food system from people to plants and animals to the planet.</p>
     </div>
   </div>
@@ -38,7 +38,7 @@
       <p class="text-justify">We are aware of the health and happiness benefits that organic products can provide. So we're proud to share our products with the world, knowing we're helping people get the most out of their lives.</p>
     </div>
     <div class="col-12 col-md-6 img-side ">
-      <img class="img-fluid" src="/media/index-img-fruits.jpg" alt="">
+      <img class="img-fluid" src="/media/index-img-fruits.jpg" alt="Our mission, our products">
     </div>
   </div>
 </section>
