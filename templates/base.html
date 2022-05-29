@@ -97,7 +97,7 @@
             </div>
           </li>
           <li class="list-inline-item">
-            <a class=" nav-link" href="">
+            <a class=" nav-link" href="{% url 'bag' %}">
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
@@ -196,11 +196,18 @@
                 {% endif %}
               </div>
             </li>
-            <div class="text-center">
-              <div><i class="fas fa-shopping-bag fa-lg" aria-hidden="true"></i></div>
-              <p class="my-0">£0.00
-              </p>
-            </div>
+            <a class=" nav-link" href="{% url 'bag' %}">
+              <div class="text-center">
+                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                <p class="my-0">
+                  {% if grand_total %}
+                  ${{ grand_total|floatformat:2 }}
+                  {% else %}
+                  $0.00
+                  {% endif %}
+                </p>
+              </div>
+            </a>
             <div class="col-2 text-left">
               <button type="button" id="sidebarCollapseX" class="btn btn-link">
                 <i class="fa-solid fa-circle-xmark"></i>
