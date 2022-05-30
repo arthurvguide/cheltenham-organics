@@ -309,11 +309,18 @@ ul {
   
   
 
-  /* --------  END CSS FOR THE INDEX PAGE ---------*/
+/* --------  END CSS FOR THE INDEX PAGE ---------*/
 
-/* -------- START CSS FILES FOR THE AUTHENTICATION PAGES ---------*/
+/* -------- START CSS PRODUCT DETAILS PAGE ---------*/
+.btn-add-cart {
+  background-color: #f58902;
+}
+.btn-browse{
+  background-color:  #1580de;
+}
+/* -------- END CSS PRODUCT DETAILS PAGE ---------*/
 
-/* -------- AUTHENTICATION SIGNUP PAGE ---------*/
+/* -------- START AUTHENTICATION SIGNUP PAGE ---------*/
 
 .signup input,
 .login input {
@@ -323,5 +330,4 @@ ul {
 #id_remember {
     width: 20px;
 }
-
-/* -------- END CSS FILES FOR THE AUTHENTICATION PAGES ---------*/
+/* --------  END AUTHENTICATION SIGNUP PAGE ---------*/
