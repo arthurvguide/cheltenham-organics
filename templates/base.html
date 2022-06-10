@@ -44,7 +44,7 @@
   <title>Cheltenham Organics</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
   <header>
     <div class="col d-md-none">
       <button type="button" id="sidebarCollapse" class="btn btn-link">
@@ -101,7 +101,11 @@
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
+                  {% if final_total %}
+                  £{{ final_total|floatformat:2 }}
+                  {% else %}
                   £0.00
+                  {% endif %}
                 </p>
               </div>
             </a>
@@ -200,10 +204,10 @@
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
-                  {% if grand_total %}
-                  ${{ grand_total|floatformat:2 }}
+                  {% if final_total %}
+                  £{{ final_total|floatformat:2 }}
                   {% else %}
-                  $0.00
+                  £0.00
                   {% endif %}
                 </p>
               </div>
@@ -264,7 +268,7 @@
 
 
   <!---------------------------- Start footer ------------------->
-  <footer>
+  <footer class="mt-auto">
       <!-- Grid row -->
       <div class="row align-items-center text-center footer">
         <!-- Grid column -->
