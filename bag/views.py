@@ -1,9 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 def get_bag(request):
-    """ A view that renders the bag contents page """
-
+    """ A view to return the home page """
+    
     return render(request, 'bag/bag.html')
-

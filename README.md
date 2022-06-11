@@ -3,6 +3,7 @@ pw: organics123
 
 BUGS FOUND:
 Slidebar does not work properly on aulth pages
+Delivery banner and footer horizontal scroll
 
 Product details:
 - maybe remove image url or host imgs on cloud
