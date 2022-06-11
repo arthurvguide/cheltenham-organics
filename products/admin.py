@@ -11,6 +11,8 @@ class ProductAdmin(admin.ModelAdmin):
         'price',
         'rating',
         'image',
+        'created',
+        'updated'
     )
 
 
