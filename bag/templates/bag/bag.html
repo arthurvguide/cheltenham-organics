@@ -2,26 +2,44 @@
 {% load static %}
 
 {% block content %}
-    <div class="container mb-2">
-        <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="mb-4">Shopping Bag</h2>
-                <hr>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                {% if bag_items %}
-                    <div class="table-responsive rounded"></div>
-                {% else %}
-                    <p class="lead mb-5">Your bag is empty.</p>
-                    <a href="{% url 'products' %}" class="btn btn-browse mt-5">
-                        <span class="text-uppercase">Browse more</span>
-                    </a>
-                {% endif %}
-            </div>
+<div class="container mb-2">
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="mb-4">Shopping Bag</h2>
+            <hr>
         </div>
     </div>
+
+    {% if bag_items %}
+    {% for item in bag_items %}
+    <div class="row mb-2 align-items-center">
+        <div class="col-4 col-md-2">
+            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+        </div>
+
+        <div class="col-6 col-md-2 p-3 w-25">
+            <p class="my-0">{{ item.product.name }}</p>
+            <p class="my-0">£{{ item.product.price }}</p>
+            <p class="my-0">Quantity: {{ item.quantity }}</p>
+        </div>
+
+        <div class="col-2">
+
+        </div>
+    </div>
+
+    {% endfor %}
+
+    {% else %}
+    <div class="row">
+        <div class="col"></div>
+        <p class="lead mb-5">Your bag is empty.</p>
+        <a href="{% url 'products' %}" class="btn btn-browse mt-5">
+            <span class="text-uppercase">Browse more</span>
+        </a>
+    </div>
+</div>
+{% endif %}
+
 {% endblock %}
