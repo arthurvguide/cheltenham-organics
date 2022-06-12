@@ -101,8 +101,8 @@
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
-                  {% if final_total %}
-                  £{{ final_total|floatformat:2 }}
+                  {% if total %}
+                  £{{ total|floatformat:2 }}
                   {% else %}
                   £0.00
                   {% endif %}
@@ -204,8 +204,8 @@
               <div class="text-center">
                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
                 <p class="my-0">
-                  {% if final_total %}
-                  £{{ final_total|floatformat:2 }}
+                  {% if total %}
+                  £{{ total|floatformat:2 }}
                   {% else %}
                   £0.00
                   {% endif %}
