@@ -316,6 +316,9 @@ ul {
 .btn-browse{
   background-color:  #1580de;
 }
+.quantity-selector{
+  width: 70px;
+}
 /* -------- END CSS PRODUCT DETAILS PAGE ---------*/
 
 /* -------- START AUTHENTICATION SIGNUP PAGE ---------*/
