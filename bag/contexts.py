@@ -7,7 +7,6 @@ def bag_contents(request):
     total = 0
     product_count = 0
     delivery = 2
-
     
     final_total = delivery + total
     
