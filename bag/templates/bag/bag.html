@@ -30,7 +30,7 @@
     </div>
     <hr>
     {% endfor %}
-    <div class="row">
+    <div class="row mb-5">
         <div class="col-12">
             <h6>Bag Total: £{{ total|floatformat:2 }}</h6>
         </div>
@@ -40,7 +40,16 @@
         <div class="col-12">
             <h4 class="mt-4 final-total"><strong>Final Total: £{{ final_total|floatformat:2 }}</strong></h4>
         </div>
+        <div class="col-12 mt-3">
+            <a href="#" class="btn btn-checkout btn-lg mt-2">
+                <span class="text-uppercase">Checkout</span>
+                <span class="icon">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </a>
+        </div>
     </div>
+
 
     {% else %}
     <div class="row">
