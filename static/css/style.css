@@ -198,7 +198,7 @@ ul {
   }
 
   .delivery-banner {
-    background-color: #000;
+    background-color: #f58902;
     max-width:100%;
   }
   /* --------  Header ---------*/
@@ -321,7 +321,11 @@ ul {
 }
 /* -------- END CSS PRODUCT DETAILS PAGE ---------*/
 
-/* -------- START AUTHENTICATION SIGNUP PAGE ---------*/
+/* -------- START AUTHENTICATION PAGES ---------*/
+.btn-allauth {
+  background-color: #000;
+  color:#fff
+}
 
 .signup input,
 .login input {
@@ -331,7 +335,7 @@ ul {
 #id_remember {
     width: 20px;
 }
-/* --------  END AUTHENTICATION SIGNUP PAGE ---------*/
+/* --------  END AUTHENTICATION PAGES ---------*/
 
 /* -------- START BAG PAGE ---------*/
 .final-total {
@@ -342,3 +346,9 @@ ul {
   color:#fff
 }
 /* --------  END BAG PAGE ---------*/
+
+/* -------- START CHECKOUT PAGE ---------*/
+.btn-view-bag{
+  background-color:  #1580de;
+}
+/* --------  END CHECKOUT PAGE ---------*/
