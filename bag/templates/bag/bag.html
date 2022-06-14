@@ -5,60 +5,68 @@
 <div class="container mt-3 mb-2">
     <div class="row">
         <div class="col">
-
             <h2 class="mb-4">Shopping Bag</h2>
             <hr>
         </div>
     </div>
-
     {% if bag_items %}
     {% for item in bag_items %}
-    <div class="row mb-2 align-items-center">
-        <div class="col-4 col-md-2">
-            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
-        </div>
+    <!-- Section items-list -->
+    <section>
+        <div class="row mb-2 align-items-center">
+            <div class="col-4 col-md-2">
+                <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+            </div>
 
-        <div class="col-6 col-md-2 p-3 w-25">
-            <p class="my-0">{{ item.product.name }}</p>
-            <p class="my-0">£{{ item.product.price }}</p>
-            <p class="my-0">Quantity: {{ item.quantity }}</p>
-        </div>
+            <div class="col-6 col-md-2 p-3 w-25">
+                <p class="my-0">{{ item.product.name }}</p>
+                <p class="my-0">£{{ item.product.price }}</p>
+                <p class="my-0">Quantity: {{ item.quantity }}</p>
+            </div>
 
-        <div class="col-2">
 
         </div>
-    </div>
+    </section>
+    <!-- Section items-list -->
     <hr>
     {% endfor %}
-    <div class="row mb-5">
-        <div class="col-12">
-            <h6>Bag Total: £{{ total|floatformat:2 }}</h6>
+    <!-- Section order-checkout-details -->
+    <section>
+        <div class="row mb-5">
+            <div class="col-12 d-flex justify-content-end">
+                <h6>Bag Total: £{{ total|floatformat:2 }}</h6>
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+                <h6>Delivery fee: £{{ delivery|floatformat:2 }}</h6>
+            </div>
+            <div class="col-12 d-flex justify-content-end">
+                <h3 class="mt-4 final-total"><strong>Final Total: £{{ final_total|floatformat:2 }}</strong></h4>
+            </div>
+            <div class="col-12 mt-3 d-flex justify-content-end">
+                <a href="#" class="btn btn-checkout btn-lg mt-2">
+                    <span class="text-uppercase">Checkout</span>
+                    <span class="icon">
+                        <i class="fas fa-lock"></i>
+                    </span>
+                </a>
+            </div>
         </div>
-        <div class="col-12">
-            <h6>Delivery fee: £{{ delivery|floatformat:2 }}</h6>
-        </div>
-        <div class="col-12">
-            <h4 class="mt-4 final-total"><strong>Final Total: £{{ final_total|floatformat:2 }}</strong></h4>
-        </div>
-        <div class="col-12 mt-3">
-            <a href="#" class="btn btn-checkout btn-lg mt-2">
-                <span class="text-uppercase">Checkout</span>
-                <span class="icon">
-                    <i class="fas fa-lock"></i>
-                </span>
+    </section>
+    <!-- Section order-checkout-details -->
+
+    {% else %}
+    <!-- Section bag-empty -->
+    <section>
+    <div class="row">
+        <div class="col">
+            <p class="lead mb-5">Your bag is empty.</p>
+            <a href="{% url 'products' %}" class="btn btn-browse mt-3">
+                <span class="text-uppercase">Browse more</span>
             </a>
         </div>
     </div>
-
-
-    {% else %}
-    <div class="row">
-        <div class="col"></div>
-        <p class="lead mb-5">Your bag is empty.</p>
-        <a href="{% url 'products' %}" class="btn btn-browse mt-5">
-            <span class="text-uppercase">Browse more</span>
-        </a>
-    </div>
+    </section>
+    <!-- Section bag-empty -->
 </div>
 {% endif %}
 
