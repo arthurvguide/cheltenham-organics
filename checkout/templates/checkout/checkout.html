@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
 
 {% block content %}
 
@@ -14,7 +17,7 @@
 
     <div class="row ">
         <div class="col-12 col-lg-6 order-lg-last mb-5 text-md-right">
-            
+
             <h3>Your order summary </h3>
             <p class="text-muted">{{ product_count }} items in your bag</p>
 
@@ -75,4 +78,11 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block extra-postloadjs %}
+    {{ block.super }}
+    {{ stripe_public_key|json_script:"id_stripe_public_key" }}
+    {{ client_secret|json_script:"id_client_secret" }}
+    <script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
