@@ -1,6 +1,8 @@
 import uuid
 
 from django.db import models
+from django.db.models import Sum
+from django.conf import settings
 
 from products.models import Product
 
@@ -30,6 +32,17 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
+    
+    def update_total(self):
+        """
+        Update grand total each time a line item is added
+        """
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.delivery_fee = 2 
+        self.final_total = self.order_total + self.delivery_fee
+        self.save()
+
+    
 
     def save(self, *args, **kwargs):
         """
