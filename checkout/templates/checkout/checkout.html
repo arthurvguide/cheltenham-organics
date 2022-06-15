@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block content %}
@@ -49,6 +49,7 @@
                     {{ order_form.street_address2 | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
                 </fieldset>
+                
                 <fieldset class="px-3">
                     <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                     <!-- A Stripe card element will go here -->
@@ -77,6 +78,8 @@
         </div>
     </div>
 </div>
+
+
 
 {% endblock %}
 
