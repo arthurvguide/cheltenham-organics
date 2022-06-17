@@ -19,7 +19,7 @@
     <div class="row justify-content-center">
         <form method="post" action="{% url 'account_confirm_email' confirmation.key %}">
             {% csrf_token %}
-                <button class="btn" type="submit">{% trans 'Confirm' %}</button>
+                <button class="btn btn-allauth" type="submit">{% trans 'Confirm' %}</button>
             </form> 
     </div>
 </div>
