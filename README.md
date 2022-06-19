@@ -1,5 +1,23 @@
-Superuser: admin
-pw: organics123
+--------------DISCLAIMER----------
+
+Many contents from this project were Inspired by Code Institute's Boutique Ado project. I'll do a better reference in the credit section and in the code itself.
+
+--------------DISCLAIMER----------
+
+--------------DISCLAIMER----------
+
+Many contents from this project were Inspired by Code Institute's Boutique Ado project. I'll do a better reference in the credit section and in the code itself.
+
+--------------DISCLAIMER----------
+
+--------------DISCLAIMER----------
+Many contents from this project were Inspired by Code Institute's Boutique Ado project. I'll do a better reference in the credit section and in the code itself.
+
+--------------DISCLAIMER----------
+
+
+Superuser: Organics
+pw: NoneOrg123
 
 BUGS FOUND:
 Slidebar does not work properly on aulth pages
