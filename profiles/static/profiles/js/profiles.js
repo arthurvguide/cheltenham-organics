@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+    // Add to wishlist
     $(document).on('click', ".add-wishlist", function(){
         var _pid=$(this).attr('data-product');
         var _vm=$(this);
@@ -22,7 +22,7 @@ $(document).ready(function() {
         location.reload();
         
     } )
-
+    // Remove from wishlist
     $(document).on('click', ".remove-wishlist", function(){
         var _pid=$(this).attr('data-product');
         var _vm=$(this);
@@ -45,5 +45,6 @@ $(document).ready(function() {
         location.reload();
         
     } )
+    
 });
 

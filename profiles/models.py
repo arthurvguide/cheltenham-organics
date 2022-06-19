@@ -1,6 +1,7 @@
 from django.db import models
 from products.models import Product
 
+
 from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
@@ -44,3 +45,5 @@ class WishList(models.Model):
     """
     user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
+
+

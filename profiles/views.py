@@ -5,8 +5,9 @@ from django.contrib import messages
 from .models import UserProfile, WishList
 from .forms import UserProfileForm
 
-from checkout.models import Order
+from checkout.models import Order, OrderFeedback
 from products.models import Product
+
 
 def profile(request):
     """ Display the user's profile. """
@@ -20,28 +21,13 @@ def profile(request):
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
-
+    feedback = OrderFeedback.objects.all()
     template = 'profiles/profile.html'
     context = {
         'form': form,
         'orders': orders,
-        'on_profile_page': True
-    }
-
-    return render(request, template, context)
-
-
-def order_history(request, order_number):
-    order = get_object_or_404(Order, order_number=order_number)
-
-    messages.info(request, (
-        f'This is a past confirmation for order number {order_number}.'
-    ))
-
-    template = 'checkout/checkout_success.html'
-    context = {
-        'order': order,
-        'from_profile': True,
+        'on_profile_page': True,
+        'feedback': feedback,
     }
 
     return render(request, template, context)
@@ -90,3 +76,33 @@ def wishlist(request):
         'wishlist': wishlist
     }
     return render(request, 'profiles/wishlist.html', context)
+
+
+def send_positive_feedback(request):
+    oid = request.GET['order']
+    order = Order.objects.filter(pk=oid).first()
+    data = {}
+    OrderFeedback.objects.create(
+        order=order,
+        like=True,
+        dislike=False
+    )
+    data = {
+            'bool': True
+        }
+    return JsonResponse(data)
+
+
+def send_negative_feedback(request):
+    oid = request.GET['order']
+    order = Order.objects.filter(pk=oid).first()
+    data = {}
+    OrderFeedback.objects.create(
+        order=order,
+        like=False,
+        dislike=True
+    )
+    data = {
+            'bool': True
+        }
+    return JsonResponse(data)
