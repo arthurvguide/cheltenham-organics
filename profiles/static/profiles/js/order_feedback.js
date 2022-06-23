@@ -10,13 +10,9 @@ $(document).ready(function() {
                 order: _oid
             },
             dataType: 'json',
-            success:function(res){
-                if(res.bool==true){
-                    _vm.addClass('disabled')
-                }
-            }
-
         })
+
+        location.reload();
 
     })
 
@@ -30,13 +26,10 @@ $(document).ready(function() {
                 order: _oid
             },
             dataType: 'json',
-            success:function(res){
-                if(res.bool==true){
-                    _vm.addClass('disabled')
-                }
-            }
 
         })
+        
+        location.reload();
 
     })
 });

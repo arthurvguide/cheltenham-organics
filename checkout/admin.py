@@ -25,7 +25,7 @@ class OrderAdmin(admin.ModelAdmin):
               'postcode', 'town_or_city', 'street_address1',
               'street_address2', 'county', 'delivery_fee',
               'order_total', 'final_total', 'original_bag',
-              'stripe_pid', 'user_profile')
+              'stripe_pid', 'user_profile', "exist_feedback")
 
     list_display = ('order_number', 'created', 'full_name',
                     'order_total', 'delivery_fee',

@@ -21,13 +21,13 @@ def profile(request):
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
-    feedback = OrderFeedback.objects.all()
+        
     template = 'profiles/profile.html'
+    
     context = {
         'form': form,
         'orders': orders,
         'on_profile_page': True,
-        'feedback': feedback,
     }
 
     return render(request, template, context)
@@ -43,7 +43,7 @@ def add_wishlist(request):
         data = {
             'bool': False
         }
-    else: 
+    else:
         WishList.objects.create(
             product=product,
             user=current_user,
@@ -87,6 +87,8 @@ def send_positive_feedback(request):
         like=True,
         dislike=False
     )
+    order.exist_feedback = True
+    order.save()
     data = {
             'bool': True
         }
@@ -102,6 +104,8 @@ def send_negative_feedback(request):
         like=False,
         dislike=True
     )
+    order.exist_feedback = True
+    order.save()
     data = {
             'bool': True
         }

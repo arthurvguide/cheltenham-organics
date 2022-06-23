@@ -32,6 +32,8 @@ class Order(models.Model):
                                       null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
     stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    exist_feedback = models.BooleanField(default=False)
+
 
     def _generate_order_number(self):
         """
@@ -86,3 +88,18 @@ class OrderLineItem(models.Model):
     def __str__(self):
         return f'PRODUCT {self.product.name} on order {self.order.order_number}'
 
+
+class OrderFeedback(models.Model):
+    """
+    Collect customer feedback, if he liked or disliked order
+    """
+    order = models.ForeignKey(Order, null=False, blank=False,
+                              on_delete=models.CASCADE)
+    like = models.BooleanField(default=False, blank=True)
+    dislike = models.BooleanField(default=False, blank=True)
+
+    def __str__(self):
+        if self.like == True:
+            return f'FEEDBACK POSITIVE on order {self.order.order_number}'
+        else:
+            return f'FEEDBACK NEGATIVE on order {self.order.order_number}'
