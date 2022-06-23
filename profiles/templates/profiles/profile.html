@@ -49,8 +49,18 @@
                     Total Cost: {{ order.final_total}}
                 </div>
                 <div class="row p-1">
-                    <button class="btn btn-success like-feedback mr-2" data-order="{{order.id}}"><i class="fa-solid fa-thumbs-up"></i></button>
-                    <button class="btn btn-danger dislike-feedback" data-order="{{order.id}}"><i class="fa-solid fa-thumbs-down"></i></button>
+                    {% if order.exist_feedback == True %}
+                    <div class="col">
+                        <p>Thank you for your feedback</p>
+                    </div>
+                    {% else %}
+                    <div class="col">
+                        <p>How was your order?</p>
+                        <button class="btn btn-success like-feedback mr-2" data-order="{{order.id}}"><i class="fa-solid fa-thumbs-up"></i></button>
+                        <button class="btn btn-danger dislike-feedback" data-order="{{order.id}}"><i class="fa-solid fa-thumbs-down"></i></button>
+                    </div>
+                    {% endif %}
+ 
                 </div>
                 
             </div>
