@@ -1,1 +1,1 @@
-web: gunicorn cheltenham-organics
+web: gunicorn cheltenham-organics.wsgi
