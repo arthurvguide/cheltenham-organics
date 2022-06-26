@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=K2D:wght@600&display=swap');
 
 html {
@@ -90,6 +90,7 @@ ul {
     position: relative;
     z-index: 2;
     padding: 0 1rem;
+    font-size: 22px;
   }
   
   @media (min-width: 768px) {
@@ -319,6 +320,8 @@ ul {
 .quantity-selector{
   width: 70px;
 }
+
+
 /* -------- END CSS PRODUCT DETAILS PAGE ---------*/
 
 /* -------- START AUTHENTICATION PAGES ---------*/
