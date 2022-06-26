@@ -1,1 +1,1 @@
-web: gunicorn cheltenham-organics.wgsi:application
+web: gunicorn cheltenham-organics
