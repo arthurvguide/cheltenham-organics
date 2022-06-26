@@ -1,1 +1,1 @@
-web: gunicorn cheltenham_organics.wsgi
+web: gunicorn cheltenham_organics.wsgi:application
