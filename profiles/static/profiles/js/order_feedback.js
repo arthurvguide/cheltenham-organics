@@ -2,7 +2,6 @@ $(document).ready(function() {
 
     $(document).on('click', ".like-feedback", function(){
         var _oid=$(this).attr('data-order');
-        var _vm=$('this');
 
         $.ajax({
             url:'../profiles/positive_feedback',
@@ -18,7 +17,6 @@ $(document).ready(function() {
 
     $(document).on('click', ".dislike-feedback", function(){
         var _oid=$(this).attr('data-order');
-        var _vm=$(this);
 
         $.ajax({
             url:'../profiles/negative_feedback',
