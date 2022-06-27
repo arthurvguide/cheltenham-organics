@@ -16,4 +16,4 @@ urlpatterns = [
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'cheltenham-organics.views.handler404'
+handler404 = 'cheltenham_organics.views.handler404'
