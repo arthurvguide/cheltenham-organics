@@ -9,6 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+        content="Come to visit the best organic food shop online. We have a variety of products, from herbs to fruits.">
+  <meta name="keywords"
+        content="organic food, organic, food, herbs, fruits, vegetables, natural, health">
   {% endblock %}
 
   {% block extra_meta %}
@@ -324,12 +328,12 @@
 
       <hr class="clearfix w-100 d-md-none pb-3">
 
-      <!-- Links ADICIONAR LINKS ADICIONAR LINKS-->
+      <!-- Internal Links -->
       <div class="col-md-3 mb-md-0 mb-3  links">
         <h5 class="text-uppercase">Links</h5>
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Home</a>
+            <a href="{% url 'home' %}">Home</a>
           </li>
           <li>
             <a href="{% url 'privacy_notice' %}" rel="noopener" target="_blank">Privacy Police</a>
@@ -339,7 +343,7 @@
           </li>
         </ul>
       </div>
-      <!-- Links ADICIONAR LINKS ADICIONAR LINKS ADICIONAR LINKS ADICIONAR LINKS-->
+      <!-- Internal Links -->
 
       <!-- Social Links -->
       <div class="col-md-3 mb-md-0 mb-3  links">
