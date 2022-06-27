@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /user_account/
+Disallow: /bag/
+Disallow: /checkout/
+Disallow: /checkout/checkout_success/
+
+Sitemap: https://cheltenham-organics.herokuapp.com/
