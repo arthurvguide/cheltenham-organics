@@ -2,7 +2,7 @@
 BUGS FOUND:
 Slidebar does not work properly on aulth pages
 Delivery banner and footer horizontal scroll
-
+- Heroku wasnt posting to S3, just receiving 
 Product details:
 - maybe remove image url or host imgs on cloud
 
