@@ -73,7 +73,6 @@
         <div class="col-12 col-md-6 col-lg-4 offset-lg-2">
             <h3 class="lead">Product Reviews</h3>
             {% if reviews %}
-            <section class="mb-3">
                 <!-- Loop over the reviews -->
                 {% for review in reviews %}
                 <div class="row">
@@ -95,11 +94,13 @@
                 </button>
                 {% endif %}
                 <hr>
+                {% include 'includes/delete_review_modal.html' %}  
                 {% endfor %}
-            </section>
+
             {% else %}
             <!-- If there's no reviews -->
             <p>No reviews for this product yet.</p>
+
             <hr>
             {% endif %}
         </div>

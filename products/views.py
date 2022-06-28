@@ -96,3 +96,20 @@ def product_detail(request, product_id):
         return render(request, 'products/product_detail.html', context)
 
 
+def delete_review(request, review_id):
+    """
+    Removes the review from the product
+    """
+
+    review = get_object_or_404(Review, pk=review_id)
+    product = review.product
+
+    try:
+        review.delete()
+        
+    except Exception as e:
+        messages.error(request, f'Error removing review: {e}')
+        return HttpResponse(status=500)
+
+    return redirect(reverse('product_detail', args=[product.id]))
+
