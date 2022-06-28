@@ -16,9 +16,9 @@ Product details:
  Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at the end of the card can be any numbers.
 
  
- [Click here](#) to visit the deployed site.
+ [Click here](https://cheltenham-organics.herokuapp.com/) to visit the deployed site.
 
-To access admin, click [here](#)
+To access admin, click [here](https://cheltenham-organics.herokuapp.com/admin/)
 - User: Organics
 - Password: NoneOrg123
 
