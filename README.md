@@ -26,6 +26,7 @@ To access admin, click [here](#)
 
 # Table of contents
 1. [Agile Workflow](#agile-workflow)
+2. [Business Strategy](#business-strategy)
 2. [Owner/Admin Stories](#owner/admin-stories)
 3. [User Stories](#user-stories)
 4. [Structure](#structure)
@@ -49,7 +50,33 @@ As Github is limited with ways to do this, I have chosen to have the Milestones 
 The Kanban board can be viewed [here](https://github.com/arthurvguide/cheltenham-organics/projects/1).
 
 [Back to Table of contents](#table-of-contents)
- 
+
+## Business Strategy
+
+### Business Model
+
+I chose a traditional B2C app, which has a simple and user-friendly interface. This online store offers self-made products (organic food). Products are collected from their land and then offered for sale on the website. With delivery charge of just £2 nationwide (UK).
+
+The business flow is as follows:
+
+ 1. Cheltenham Organics produces its organic foods.
+
+ 2. The website handles the selling of products to the website user.
+
+The intentions should be obvious and users should know as soon as they enter the site what it offers and how to use it's features.
+
+### Marketing
+
+This site has a Facebook Business page with a link on the page footer. 
+
+Upon registering for an account, customers can check a box to receive news and offers through email via Mailchimp.
+
+Upon registering, the user ir redirected to a new page confirming their subscription. The site owner can now see the new subscriber on their audience dashboard, and new campaigns will be sent to them too.
+
+### Search Engine Optimisation
+
+I have generated a sitemap.xml and robots.txt file, and only included relevant canonical links which help Google map the pages of the site.
+
 ## User Stories
 
 ### EPIC - REGISTRATION AND USER ACCOUNTS
