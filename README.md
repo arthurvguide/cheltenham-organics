@@ -207,8 +207,7 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
 - [Check the wireframes used to this project](). 
 
  ### Diagrams
- 
- - [Check the diagrams used to this project](). 
+ - [Check the diagrams (database scheme) used to this project](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/database%20scheme-cheltenham%20organics.png). 
 
   [Back to Table of contents](#table-of-contents)
 
