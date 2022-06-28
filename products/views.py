@@ -1,7 +1,8 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, Category
+from .models import Product, Category, Review
+from .forms import ReviewForm
 
 from profiles.models import WishList, UserProfile
 
@@ -42,20 +43,56 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product)
 
     if request.user.is_authenticated:
         current_user = UserProfile.objects.filter(user=request.user).first()
         wishlist = WishList.objects.filter(product=product, user=current_user)
 
-        context = {
-        'product': product,
-        'wishlist': wishlist,
-    }
+        if request.method == 'POST':
+
+            review_form = ReviewForm(data=request.POST or None)
+
+            if request.user.is_authenticated and review_form.is_valid():
+
+                review_form.user = current_user
+                review = review_form.save(commit=False)
+                review.product = product
+                review.save()
+                product.save()
+
+                context = {
+                   'product': product,
+                   'reviews': reviews,
+                   'wishlist': wishlist,
+                   'review_form': ReviewForm(),
+                  }
+                return render(request, 'products/product_detail.html', context)
+
+            else:
+                context = {
+                   'product': product,
+                   'reviews': reviews,
+                   'wishlist': wishlist,
+                   'review_form': ReviewForm(),
+                  }
+                return render(request, 'products/product_detail.html', context)
+
+        else:
+            context = {
+                'product': product,
+                'reviews': reviews,
+                'wishlist': wishlist,
+                'review_form': ReviewForm(),
+                }
+            return render(request, 'products/product_detail.html', context)
 
     else:
         context = {
-        'product': product,
-    }
+                   'product': product,
+                   'reviews': reviews,
+                  }
 
-    
-    return render(request, 'products/product_detail.html', context)
+        return render(request, 'products/product_detail.html', context)
+
+
