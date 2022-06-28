@@ -1,3 +1,10 @@
+"""
+checkout/models.py: Contains the models Order, OrderLineItem and
+OrderFeedback.
+Order and OrderLineItem  was Inspired by Code Institute's Boutique Ado project,
+but adapted to my project. OrderFeedback is an "original model".
+"""
+
 import uuid
 
 from django.db import models

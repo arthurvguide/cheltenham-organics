@@ -1,4 +1,11 @@
-# - - - - - Django Imports - - - - - - - - -
+"""
+products/models.py: Contains the models Category, Product and Review.
+
+Category and Product  was Inspired by Code Institute's Boutique Ado project,
+but adapted to my project
+Review is an "original model".
+"""
+
 from django.db import models
 from django.contrib.auth.models import User
 
