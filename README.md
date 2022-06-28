@@ -214,9 +214,23 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
 ## Features
 #### User Features
 
+    - User can buy products without having an account
+    - User can checkout using a secure system (stripe)
+    - User can subscribe for newsletter and receive offers
 
-#### Owner/Admin Features
+    - User can create an account and have benefits
+    - User logged-in can buy products and save their address for future purchases
+    - User logged-in can review products
+    - User logged-in can send positive or negative feedback about their historic orders
+    - User can add and remove products to their wishlist
+    
 
+#### Admin Features
+
+    - Admin can create a product category
+    - Admin can create products
+    - Admin can delete reviews without using admin dashboard, so can avoid spam reviews
+    - Admin can check the orders feedback by accessing the orders in the admin dashboard
 
 ## Future Features
 
