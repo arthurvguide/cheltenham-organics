@@ -3,7 +3,7 @@
 
 
 {% block content %}
-<!---Jumbotron Section-->
+<!--Jumbotron Section-->
 <section>
   <div class="jumbotron jumbotron-fluid d-flex align-items-center align-middle">
     <div class="container align-middle">
@@ -14,35 +14,39 @@
         <p>Delivered to your doorstep</p>
       </div>
       <div class="row justify-content-center">
-      <a class="btn btn-black mt-5 pt-2" href="{% url 'products' %}">SHOP NOW</a>
+        <a class="btn btn-black mt-5 pt-2" href="{% url 'products' %}">SHOP NOW</a>
       </div>
     </div>
   </div>
 </section>
-<!---Jumbotron Section-->
+<!--Jumbotron Section-->
 
-<!---Home Cards Section-->
+<!--Home Cards Section-->
 <section>
   <div class="row home-card-first align-items-center flex-column-reverse flex-md-row">
     <div class="col-12 col-md-6 img-side">
-        <img class="img-fluid" src="{{ MEDIA_URL }}index-img.farm.jpg" alt="Organic Food Production">
+      <img class="img-fluid" src="{{ MEDIA_URL }}index-img.farm.jpg" alt="Organic Food Production">
     </div>
     <div class="col-12 col-md-6 text-side">
       <h2>Why organic food?</h2>
-      <p class="text-justify">It is a system of farming and production of food that is natural and organic. Organic farmers are focused on producing food of high quality with methods that are beneficial to our entire food system from people to plants and animals to the planet.</p>
+      <p class="text-justify">It is a system of farming and production of food that is natural and organic. Organic
+        farmers are focused on producing food of high quality with methods that are beneficial to our entire food system
+        from people to plants and animals to the planet.</p>
     </div>
   </div>
   <div class="row home-card-second align-items-center ">
     <div class="col-12 col-md-6 text-side">
       <h2>Our mission</h2>
-      <p class="text-justify">We are aware of the health and happiness benefits that organic products can provide. So we're proud to share our products with the world, knowing we're helping people get the most out of their lives.</p>
+      <p class="text-justify">We are aware of the health and happiness benefits that organic products can provide. So
+        we're proud to share our products with the world, knowing we're helping people get the most out of their lives.
+      </p>
     </div>
     <div class="col-12 col-md-6 img-side ">
       <img class="img-fluid" src="{{ MEDIA_URL }}index-img-fruits.jpg" alt="Our mission, our products">
     </div>
   </div>
 </section>
-<!---Home Cards Section-->
+<!--Home Cards Section-->
 
 
 {% endblock %}
