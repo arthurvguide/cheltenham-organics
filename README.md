@@ -222,7 +222,7 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
     - User logged-in can buy products and save their address for future purchases
     - User logged-in can review products
     - User logged-in can send positive or negative feedback about their historic orders
-    - User can add and remove products to their wishlist
+    - User logged-in can add and remove products to their wishlist
     
 
 #### Admin Features
@@ -234,6 +234,14 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
 
 ## Future Features
 
+    - User can procces payment using apple pay, google pay and paypal.
+    - User can rate the products as well, not only review.
+    - User can use vouncher Wcodes
+    
+    - Admin can have stock control
+    - Admin can add products without using admin dashboard
+    - Admin can put discounts on products
+    - Admin can generate vouncher codes
 
  [Back to Table of contents](#table-of-contents)
 ## Technologies Used
