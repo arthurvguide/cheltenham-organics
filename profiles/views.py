@@ -1,7 +1,7 @@
 """
 profiles/views.py: views to display all pages in the profile app.
-Profile view was inspired by Code Institute's Boutique Ado project, 
-but adapted for my project. The others views was necessary to handle 
+Profile view was inspired by Code Institute's Boutique Ado project,
+but adapted for my project. The others views was necessary to handle
 my "original models".
 """
 
@@ -28,9 +28,9 @@ def profile(request):
 
     form = UserProfileForm(instance=profile)
     orders = profile.orders.all()
-        
+
     template = 'profiles/profile.html'
-    
+
     context = {
         'form': form,
         'orders': orders,
@@ -45,7 +45,8 @@ def add_wishlist(request):
     product = Product.objects.get(pk=pid)
     current_user = UserProfile.objects.filter(user=request.user).first()
     data = {}
-    count_wishlist = WishList.objects.filter(product=product, user=current_user).count()
+    count_wishlist = WishList.objects.filter(product=product,
+                                             user=current_user).count()
     if count_wishlist > 0:
         data = {
             'bool': False

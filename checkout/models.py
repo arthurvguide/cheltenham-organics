@@ -9,7 +9,6 @@ import uuid
 
 from django.db import models
 from django.db.models import Sum
-from django.conf import settings
 
 from django_countries.fields import CountryField
 
@@ -19,7 +18,8 @@ from products.models import Product
 
 class Order(models.Model):
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
-                                     null=True, blank=True, related_name='orders')
+                                     null=True, blank=True,
+                                     related_name='orders')
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
     email = models.EmailField(max_length=254, null=False, blank=False)
@@ -31,16 +31,16 @@ class Order(models.Model):
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
     created = models.DateTimeField(auto_now_add=True)
-    delivery_fee = models.DecimalField(max_digits=6, 
+    delivery_fee = models.DecimalField(max_digits=6,
                                        decimal_places=2, null=False, default=0)
     order_total = models.DecimalField(max_digits=10,
                                       decimal_places=2, null=False, default=0)
     final_total = models.DecimalField(max_digits=10, decimal_places=2,
                                       null=False, default=0)
     original_bag = models.TextField(null=False, blank=False, default='')
-    stripe_pid = models.CharField(max_length=254, null=False, blank=False, default='')
+    stripe_pid = models.CharField(max_length=254, null=False,
+                                  blank=False, default='')
     exist_feedback = models.BooleanField(default=False)
-
 
     def _generate_order_number(self):
         """
@@ -48,17 +48,14 @@ class Order(models.Model):
         """
         return uuid.uuid4().hex.upper()
 
-    
     def update_total(self):
         """
         Update grand total each time a line item is added
         """
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
-        self.delivery_fee = 2 
+        self.delivery_fee = 2
         self.final_total = self.order_total + self.delivery_fee
         self.save()
-
-    
 
     def save(self, *args, **kwargs):
         """
@@ -80,7 +77,7 @@ class OrderLineItem(models.Model):
     product = models.ForeignKey(Product, null=False,
                                 blank=False, on_delete=models.CASCADE)
     quantity = models.IntegerField(null=False, blank=False, default=0)
-    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2, 
+    lineitem_total = models.DecimalField(max_digits=6, decimal_places=2,
                                          null=False, blank=False,
                                          editable=False)
 
@@ -106,7 +103,7 @@ class OrderFeedback(models.Model):
     dislike = models.BooleanField(default=False, blank=True)
 
     def __str__(self):
-        if self.like == True:
+        if self.like is True:
             return f'FEEDBACK POSITIVE on order {self.order.order_number}'
         else:
             return f'FEEDBACK NEGATIVE on order {self.order.order_number}'
