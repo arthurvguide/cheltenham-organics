@@ -1,3 +1,8 @@
+"""
+checkout/views.py: views to display all pages in the checkout app.
+Credit for Code Institute's Boutique Ado project
+"""
+
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages

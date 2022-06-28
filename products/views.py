@@ -1,3 +1,10 @@
+"""
+products/views.py: views to display all pages in the products app.
+It was inspired by Code Institute's Boutique Ado project,
+but adapted for my project. Delete_reviw views was necessary to handle
+my "original models".
+"""
+
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.db.models import Q

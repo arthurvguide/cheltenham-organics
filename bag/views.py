@@ -1,4 +1,10 @@
+"""
+bag/views.py: views to display all pages in the bag app.
+Credit for Code Institute's Boutique Ado project.
+"""
+
 from django.shortcuts import render, redirect, reverse, HttpResponse
+
 
 def get_bag(request):
     """ A view to return the bag page """

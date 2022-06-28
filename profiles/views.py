@@ -1,3 +1,10 @@
+"""
+profiles/views.py: views to display all pages in the profile app.
+Profile view was inspired by Code Institute's Boutique Ado project, 
+but adapted for my project. The others views was necessary to handle 
+my "original models".
+"""
+
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.contrib import messages
