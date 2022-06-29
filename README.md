@@ -290,7 +290,7 @@ The SQLite database was used for the development environment, and the Postgres d
 
 - The website Admin has control over everything in the app. Through this, the admin can create new products to be displayed, and categories and also can read the feedback from the customer who purchased something. 
 
-![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/profile/admin-dash.PNG)
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/admin/admin-dash.PNG)
 
 ## Technologies Used
 
