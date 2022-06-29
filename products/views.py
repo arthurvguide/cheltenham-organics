@@ -8,6 +8,8 @@ my "original models".
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.decorators import login_required
+
 from .models import Product, Category, Review
 from .forms import ReviewForm
 
@@ -33,7 +35,7 @@ def get_products(request):
             if not query:
                 messages.error(request, "No searchs has been inputed")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query)
             products = products.filter(queries)
 
@@ -103,6 +105,7 @@ def product_detail(request, product_id):
         return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def delete_review(request, review_id):
     """
     Removes the review from the product
@@ -113,10 +116,9 @@ def delete_review(request, review_id):
 
     try:
         review.delete()
-        
+
     except Exception as e:
         messages.error(request, f'Error removing review: {e}')
         return HttpResponse(status=500)
 
     return redirect(reverse('product_detail', args=[product.id]))
-

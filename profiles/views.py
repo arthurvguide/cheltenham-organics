@@ -8,6 +8,7 @@ my "original models".
 from django.shortcuts import render, get_object_or_404
 from django.http import JsonResponse
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile, WishList
 from .forms import UserProfileForm
@@ -16,6 +17,7 @@ from checkout.models import Order, OrderFeedback
 from products.models import Product
 
 
+@login_required
 def profile(request):
     """ Display the user's profile. """
     profile = get_object_or_404(UserProfile, user=request.user)
@@ -40,6 +42,7 @@ def profile(request):
     return render(request, template, context)
 
 
+@login_required
 def add_wishlist(request):
     pid = request.GET['product']
     product = Product.objects.get(pk=pid)
@@ -62,6 +65,7 @@ def add_wishlist(request):
     return JsonResponse(data)
 
 
+@login_required
 def remove_wishlist(request):
     pid = request.GET['product']
     product = Product.objects.get(pk=pid)
@@ -77,6 +81,7 @@ def remove_wishlist(request):
     return JsonResponse(data)
 
 
+@login_required
 def wishlist(request):
     current_user = UserProfile.objects.filter(user=request.user).first()
     wishlist = WishList.objects.filter(user=current_user).order_by('-id')
