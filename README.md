@@ -249,6 +249,32 @@ The SQLite database was used for the development environment, and the Postgres d
 
  [Back to Table of contents](#table-of-contents)
 
+### Screenshots and website breakdwon with its features
+
+#### Home Page and Navigation 
+
+- Hero section and the navbar. In the Navbar user can log in, create accounts, go into a shopping bag, and use the search bar to look for products. In the hero section, there's a "call to action" button, calling the customer to shop.
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-1.PNG)
+
+- Explaining a bit more about the organic food system to the user
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-2.PNG)
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-3.PNG)
+
+- In the footer user can signup for newsletter mail, receiving offers direct to their email. Also user can access the Home, Privacy Police, Terms of use and social links. 
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-footer.PNG)
+
+#### Products pages
+
+- All Products pages - User can select desired product and then goes to product detail page
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/products/all-products.PNG)
+
+- Product details page - User can add the product to the cart, if logged-in can read, write reviews, and delete their reviews it they desire so. If not logged-in they can just read reviews. Logged-in user can add the product to the wishlist. 
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/products/product-details.PNG)
 ## Technologies Used
 
 ### Languages
@@ -360,35 +386,3 @@ The steps to take are:
 
 [Back to Table of contents](#table-of-contents)
 
-## Screenshots and website breakdwon
-
-### Home Page and Navigation 
-
-- Hero section and the navbar. In the Navbar user can log in, create accounts, go into a shopping bag, and use the search bar to look for products. In the hero section, there's a "call to action" button, calling the customer to shop.
-![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-1.PNG)
-
-- Explaining a bit more about the organic food system to the user
-![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-2.PNG)
-![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-3.PNG)
-
-- In the footer user can signup for newsletter mail, receiving offers direct to their email. Also user can access the Home, Privacy Police, Terms of use and social links. 
-![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/home-page/home-page-footer.PNG)
-
-### Shoppiing
-![]()
-
-### Cart
-![]()
-![]()
-![]()
-
-### Page 2
-![]()
-
-### Page 3  
-![]()
-
-###  Page 4
-![]()
-
-[Back to Table of contents](#table-of-contents)
