@@ -1,3 +1,9 @@
+"""
+checkout/webhook_handler.py: Contains the class StripeWH_Handler
+that takes care of sending a webhook to stripe, making sure that the
+process is done safely. Credit: Code Institute Boutique Ado, Stripe
+"""
+
 from django.http import HttpResponse
 
 from .models import Order, OrderLineItem

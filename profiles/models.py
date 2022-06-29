@@ -3,6 +3,7 @@ profiles/models.py: Contains the models UserProfile and WishList.
 UserProfile was Inspired by Code Institute's Boutique Ado project,
 and also create_or_update_user_profile method.
 WishList is a "orginal model".
+
 """
 
 from django.db import models
