@@ -200,8 +200,6 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
  [Back to Table of contents](#table-of-contents)
 
  
-
-
 ## Structure
  ### Wireframes
 - [Check the wireframes used to this project](). 
@@ -264,7 +262,53 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
 
 ## Testing
  
+## Deployment
 
+### Forking the GitHub Repository
+
+To make a clone, or 'Fork' this repository, follow the steps below.
+
+    - Access your GitHub account and find the relevant repository.
+    - Click on 'Fork' on the top right of the page.
+    - You will find a copy of the repository in your own Github account.
+
+### Making a Local Clone
+
+    - Access your GitHub account and find the relevant repository.
+    - Click the 'Code' button next to 'Add file'.
+    - To clone the repository using HTTPS, under clone with HTTPS, copy the link.
+    - Open Git Bash.
+    - Access the directory you want the clone to be have.
+    - In your IDE's terminal type 'git clone' and the paste the URL you copied.
+    - Press Enter.
+    - You now have a local clone.
+
+### Heroku
+This application has been deployed from Github using Heroku. Here's how:
+
+    - Create an account at heroku.com
+    - Create a new app, add app name and your region
+    - Click on create app
+    - Go to "Settings"
+    - Under Config Vars, add your sensitive data (creds.json for example)
+    - For this project, I set buildpacks to and in that order.
+    - Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+    - Enter your repository name and click on it when it shows below
+    - Choose the branch you want to buid your app from
+    - If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+    - All done!
+
+### AWS S3
+
+The deployed version of this website has static(CSS and JavaScript) and media files hosted to it via a web based service called Amazon Web Services S3 Bucket.
+
+The steps to take are:
+
+    - Create an account at aws.amazon.com
+    - Navigate to the IAM application and create a user and group
+    - Set the AmazonS3FullAccess for the user and copy the AWS ACCESS and SECRET keys as config vars to your workspace and deployment environment
+    - Create a new Bucket within the S3 application with an appropriate name.
+    - Enable public access for your bucket so users can access and use the services on your website (upload, view, download, etc). More info can be read in the official       documentation at https://aws.amazon.com/s3/
 
 ## Credits
 
