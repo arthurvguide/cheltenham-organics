@@ -19,8 +19,7 @@ Product details:
  [Click here](https://cheltenham-organics.herokuapp.com/) to visit the deployed site.
 
 To access admin, click [here](https://cheltenham-organics.herokuapp.com/admin/)
-- User: Organics
-- Password: NoneOrg123 -MUDAR SENHA MUDAR SENHA MUDAR SENHA
+- If you want to access admin, contact me! (The admin user and password in the version history no longer exist!)
 
 ---
 
@@ -204,7 +203,8 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
  ### Structure
 
  #### Wireframes
-- [Check the wireframes used to this project](). 
+- [Check the wireframes used to this project - LARGE SCREEN](https://github.com/arthurvguide/cheltenham-organics/tree/main/docs/wireframes-large-screen). 
+- [Check the wireframes used to this project - MOBILE SCREEN](https://github.com/arthurvguide/cheltenham-organics/tree/main/docs/wireframes-mobile).
 
  ### Database
 
