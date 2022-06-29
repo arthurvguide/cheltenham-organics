@@ -20,7 +20,7 @@ Product details:
 
 To access admin, click [here](https://cheltenham-organics.herokuapp.com/admin/)
 - User: Organics
-- Password: NoneOrg123
+- Password: NoneOrg123 -MUDAR SENHA MUDAR SENHA MUDAR SENHA
 
 ---
 
@@ -43,7 +43,7 @@ To access admin, click [here](https://cheltenham-organics.herokuapp.com/admin/)
 
 ## Agile Workflow
 
-![](#)
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/kanban-board.JPG)
 I've tried to implement the basic Agile strategy, creating issues for my user stories, a Kanban board for the project, Milestones for each epic and moving the stories from TO DO to, PROGRESS to DONE.
 
 As Github is limited with ways to do this, I have chosen to have the Milestones as Epics instead of sprints in this project.
@@ -199,18 +199,24 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
 
  [Back to Table of contents](#table-of-contents)
 
- 
-## Structure
- ### Wireframes
+## User Experience
+
+ ### Structure
+
+ #### Wireframes
 - [Check the wireframes used to this project](). 
 
- ### Diagrams
+ ### Database
+
+The SQLite database was used for the development environment, and the Postgres database for production once the project was deplyed on Heroku. Both are relational databases and work well with the Django framework used for this project. Check the data model below.
+
  - [Check the diagrams (database scheme) used to this project](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/database%20scheme-cheltenham%20organics.png). 
+
 
   [Back to Table of contents](#table-of-contents)
 
-## Features
-#### User Features
+### Features
+##### User Features
 
     - User can buy products without having an account
     - User can checkout using a secure system (stripe)
@@ -223,14 +229,14 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
     - User logged-in can add and remove products to their wishlist
     
 
-#### Admin Features
+##### Admin Features
 
     - Admin can create a product category
     - Admin can create products
     - Admin can delete reviews without using admin dashboard, so can avoid spam reviews
     - Admin can check the orders feedback by accessing the orders in the admin dashboard
 
-## Future Features
+### Future Features
 
     - User can procces payment using apple pay, google pay and paypal.
     - User can rate the products as well, not only review.
@@ -242,15 +248,47 @@ I have generated a sitemap.xml and robots.txt file, and only included relevant c
     - Admin can generate vouncher codes
 
  [Back to Table of contents](#table-of-contents)
+
 ## Technologies Used
 
-### Main Tech
- - [Django](https://www.djangoproject.com/) 
- - [Java Script](https://www.javascript.com/)
- - [Bootstrap](https://getbootstrap.com/)
+### Languages
+- Python 3.8 was used for backend programming
 
+- HTML5 was used for building all web pages
 
-### Applications, Libraries and Platforms
+- CSS3 was utilized for styling the website
+
+- JavaScript for frontend programming
+
+### Frameworks, Libraries and Other Resources
+
+- Bootstrap 4 
+
+- JavaScript framework JQuery 
+
+- Font Awesome fonts
+
+- Google Fonts
+
+- Facebook Pages was used to create the Facebook Business Page that is linked on the site.
+
+- Mailchimp was used to create the newsletter signup form.
+
+- Git - Version control system used to commit and push to Github via Gitpod.
+
+- Github - The projects repository and all its branches were commited, and pushed to Github.
+
+- Stripe - Used to process the users payments and handle webhooks.
+
+- Gitpod - All code was written and tested with the Gitpod web-based IDE.
+
+- Balsamiq Wireframes was used to create wireframe for the project
+
+- Lucidchart was used to create the visual model schema for the project.
+
+- Heroku - Used to deploy the application.
+
+- AWS S3 Bucket - Used to host media (images) and static(CSS and JavaScript) files for the site.
 
 
 [Back to Table of contents](#table-of-contents)
