@@ -268,13 +268,25 @@ The SQLite database was used for the development environment, and the Postgres d
 
 #### Products pages
 
-- All Products pages - User can select desired product and then goes to product detail page
+- All Products pages - User can select desired product and then goes to product detail page.
 
 ![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/products/all-products.PNG)
 
 - Product details page - User can add the product to the cart, if logged-in can read, write reviews, and delete their reviews it they desire so. If not logged-in they can just read reviews. Logged-in user can add the product to the wishlist. 
 
 ![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/products/product-details.PNG)
+
+#### Profile page
+
+- Logged-in user has a profile page, where they can access ther order history and change default delivery address and also access wishlist.
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/profile/my-profile.PNG)
+
+- A wishlist where the customer can save products they want to buy at some point. If the product is clicked, they are taken to the product detail page
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/profile/profile-wishlist.PNG)
+
+
 ## Technologies Used
 
 ### Languages
