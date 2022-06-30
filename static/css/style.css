@@ -234,7 +234,9 @@ a[data-toggle="collapse"] {
   width: 200px;
   height: 50px;
 }
-
+.btn-shop {
+  padding-top: 13px;
+} 
 /* --------  END CSS FOR THE INDEX PAGE ---------*/
 
 /* --------  CSS PRODUCT DETAILS PAGE ---------*/
