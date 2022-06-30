@@ -55,6 +55,24 @@ The Kanban board can be viewed [here](https://github.com/arthurvguide/cheltenham
 
 ## Business Strategy
 
+### Primary Goals
+
+#### The site owners' primary goals are:
+
+    - To be able to sell the stores products online
+    - To be able to add, remove or edit products in the store.
+    - To access a customer's order, edit and/or remove it if necessary.
+    - To access order feedbacks
+    - To own a website which is easy to use and navigate, for all types of users on all devices.
+
+#### A potential customer's primary goals are:
+
+    - To view details of and purchase any of the available products from the online store.
+    - To be able to register for an account.
+    - To see an order history in their account.
+    - To be able to edit their account details.
+    - To easily navigate the whole website and keep track of all user interactions.
+
 ### Business Model
 
 I chose a traditional B2C app, which has a simple and user-friendly interface. This online store offers self-made products (organic food). Products are collected from their land and then offered for sale on the website. With delivery charge of just £2 nationwide (UK).
@@ -79,7 +97,7 @@ Also, to help business engagement, a facebook page was created - [Check here](ht
 
 ### Search Engine Optimisation
 
-I have generated a sitemap.xml and robots.txt file, and only included relevant canonical links which help Google map the pages of the site.
+I have generated a sitemap.xml and robots.txt for better SEO.
 
 ## User Stories
 
@@ -299,6 +317,7 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 - Checkout Success Page - If the purchase was successful, the user receives a confirmation message and a breakdown of their order.
 
 ![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/checkout/checkout-success.JPG)
+
 #### Profile page
 
 - Logged-in user has a profile page, where they can access ther order history and change default delivery address and also access wishlist.
