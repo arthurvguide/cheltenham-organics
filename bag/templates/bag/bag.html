@@ -12,7 +12,7 @@
     {% if bag_items %}
     {% for item in bag_items %}
     <!-- Section items-list -->
-    <section>
+    <div>
         <div class="row mb-2 align-items-center">
             <div class="col-4 col-md-2">
                 <img class="img-fluid rounded" src="{{ item.product.image.url }}">
@@ -48,7 +48,7 @@
 
             </div>
         </div>
-    </section>
+    </div>
     <!-- Section items-list -->
     <hr>
     {% endfor %}
