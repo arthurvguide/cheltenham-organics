@@ -37,6 +37,9 @@ ul {
 }
 
 /* -------- header ---------*/
+.fa-bars {
+  color:#f58902;
+}
 .form-control {
   height: calc(2.5rem + 2px);
   padding: 0.5rem 1.5rem;
