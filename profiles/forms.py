@@ -1,3 +1,8 @@
+"""
+profiles/forms.py: user profile form.
+Credit to Code Institute's Boutique Ado project.
+"""
+
 from django import forms
 from .models import UserProfile
 
