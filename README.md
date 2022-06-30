@@ -281,6 +281,24 @@ The SQLite database was used for the development environment, and the Postgres d
 
 ![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/products/product-details.PNG)
 
+### Bag page
+
+- Bag Product - User can see the products in their bag, update quantity and remove the item from the bag. Also, being happy to proceed, they can checkout.
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/bag.JPG)
+
+#### Checkout pages
+
+- Checkout Page - Here finally the user can fill up their details and pay for the products. If it's a authenticated user, sometimes they have their details saved, ready to be used automatically.  
+
+You can test the card payment functionality without making a purchase. 
+Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at the end of the card can be any numbers.
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/checkout/checkout.JPG)
+
+- Checkout Success Page - If the purchase was successful, the user receives a confirmation message and a breakdown of their order.
+
+![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/checkout/checkout-success.JPG)
 #### Profile page
 
 - Logged-in user has a profile page, where they can access ther order history and change default delivery address and also access wishlist.
