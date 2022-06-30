@@ -344,7 +344,10 @@ The SQLite database was used for the development environment, and the Postgres d
 ## Validation
 
 
- - [Click here]().
+-  [Check the CSS Validation](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/css-validation.JPG)
+
+- [Check the HTML Validation](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/html-validation.JPG).
+
 
 ## Testing
  
