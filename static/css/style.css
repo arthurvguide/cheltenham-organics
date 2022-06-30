@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&family=K2D:wght@600&display=swap');
 
 html {
-    height: 100%;
-    
+  max-width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
+
 body {
     font-family: 'K2D', sans-serif;
     overflow-x: hidden;
-    color: black;
+    color: #000;
 
 }
 
@@ -20,6 +22,7 @@ a {
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
+  
 }
 
 ul {
@@ -29,7 +32,9 @@ ul {
 }
 
 /* --------  CSS BASE PAGE ---------*/
-
+  .test {
+    color:#1580de
+  }
 /* -------- header ---------*/
   .form-control {
     height: calc(2.5rem + 2px);
@@ -202,6 +207,7 @@ ul {
     background-color: #f58902;
     max-width:100%;
   }
+
   /* --------  Header ---------*/
   
   /* -------- Footer ---------*/
