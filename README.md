@@ -75,6 +75,8 @@ Upon registering for an account, customers can check a box to receive news and o
 
 Upon registering, the user ir redirected to a new page confirming their subscription. The site owner can now see the new subscriber on their audience dashboard, and new campaigns will be sent to them too.
 
+Also, to help business engagement, a facebook page was created - [Check here](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/facebook-page.JPG). 
+
 ### Search Engine Optimisation
 
 I have generated a sitemap.xml and robots.txt file, and only included relevant canonical links which help Google map the pages of the site.
