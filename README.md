@@ -429,8 +429,8 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 <details>
     <summary>View image of the steps</summary>
 
-![Register Page access in the footer](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/newsletter/newsletter.PNG)
-![Mailchimp](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/newslleter/mail-chimp.PNG)
+![Register Page access in the footer](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/newsletter/newsletter.PNG)
+![Mailchimp](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/newsletter/mail-chimp.PNG)
 
 </details>
  - Expected result: *To be signed-in  in the newsletter without issues and the admin get my email*
@@ -452,7 +452,7 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 <details>
     <summary>View image of the steps</summary>
 
-![Create Product in the admin](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/products/admin-create-products.PNG)
+![Create Product in the admin](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/admin-create-products.PNG)
 ![Success-message](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/created.PNG)
 ![User can see the products](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/user-can-see.PNG)
 
@@ -469,15 +469,36 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
  **"User would like to see further details of the product"**
 
 - **Actions**:
-    * *Click in the product*
+    * *Select a product and click on it*
 
 <details>
     <summary>View image of the steps</summary>
 
-![Product List](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/products/admin-create-products.PNG)
-![Product Details](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/products/admin-create-products.PNG)
+![Product List](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/user-can-see.PNG)
+![Product Details](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/product-details.PNG)
 
+</details>
+ - Result: *Works as intended*
 
+ [Back to Table of contents](#table-of-contents)
+
+ ### Logged-in user can manage the wishlist
+
+ **"User want to save the product for a future buy and also want to remove if it's wanted"**
+
+- **Actions**:
+    * *In the product detail page, click add to wish list*
+    * *In the product detail page, click remove wish list*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/product-details.PNG)
+![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/wishlist-in.PNG)
+![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/removed.PNG)
+![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/empty.PNG)
+
+</details>
  - Result: *Works as intended*
 
  [Back to Table of contents](#table-of-contents)
