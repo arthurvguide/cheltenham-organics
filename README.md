@@ -392,24 +392,23 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 <details>
     <summary>View image of the steps to create and login an account</summary>
 
-![Register Page access in the navbar]()
-![Fill up details]()
-![Verify-email]()
-![Email confirmation]()
-![Account confirmed]()
-![Ready to login]()
-![Logged-in]()
+![Register Page access in the navbar](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/create.PNG)
+![Fill up details](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/fill-up-details.PNG)
+![Verify-email](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/very-email.PNG)
+![Email confirmation](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/email-confirmation.PNG)
+![Account confirmed](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/account-confirmed.PNG)
+![Ready to login](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/ready-to-login.PNG)
+![Logged-in](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/logged-in.PNG)
 
 </details>
 
 <details>
     <summary>View image of the steps to recover password</summary>
 
-![Fill up details]()
-![Verify-email]()
-![Email confirmation]()
-![changed]()
-![Ready to loin]()
+![Fill up details](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/reset-pw.PNG)
+![Email confirmation](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/email-pw.PNG)
+![change it](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/change-pw.PNG)
+![Password Changed](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/accounts/changed.PNG)
 
 
 </details>
