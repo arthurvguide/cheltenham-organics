@@ -158,6 +158,8 @@ I have generated a sitemap.xml and robots.txt for better SEO.
 
 - As a user, I can click the product in the products list so that I can view the further details of the product.
 
+Disclaimer: Completing the product user stories present here, would make the admin's primary goals being achieved as well.
+
 ### EPIC - THE CART
 
 ####  USER STORY: Viewing the cart contents
