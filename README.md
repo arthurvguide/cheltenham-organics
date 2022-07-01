@@ -387,7 +387,7 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
   **"I would like to create an account in the website and logging, and in the case I lose my password I can recover it."**
 
 - **Actions**:
-    * *User access the signup page in the navbar*
+    * *User access the signup page in the navbar and follow the process*
 
 <details>
     <summary>View image of the steps to create and login an account</summary>
@@ -418,6 +418,67 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
  - Actual result: *Works as intended*
 
  [Back to Table of contents](#table-of-contents)
+
+### Test newsletter signup
+
+ **"I would like to be subscribed to the newsletter "**
+
+- **Actions**:
+    * *User access the newsletter signup in the footer and follow the process*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Register Page access in the footer](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/newsletter/newsletter.PNG)
+![Mailchimp](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/newslleter/mail-chimp.PNG)
+
+
+ - Expected result: *To be signedup in the newsletter without issues and the admin get my email*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
+ ### Test Admin add products to be viewed by the user.
+
+ **"Admin would like to create products and display it to the user "**
+
+- **Actions**:
+    * *Create an product in the Admin Panel*
+    * *User access the products page*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Create Product in the admin](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/products/admin-create-products.PNG)
+![Success-message](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/created.PNG)
+![User can see the products](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/user-can-see.PNG)
+
+
+ - Expected result: *Admin to create a product and be viewed by the user*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
+### User see product details.
+
+ **"User would like to see further details of the product"**
+
+- **Actions**:
+    * *Click in the product*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Product List](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/products/admin-create-products.PNG)
+![Product Details](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/products/admin-create-products.PNG)
+
+
+ - Result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
 
 ## Bugs
 
