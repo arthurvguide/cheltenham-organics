@@ -383,6 +383,43 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 
 ## Testing
 
+### Test user authentication
+  **"I would like to create an account in the website and logging, and in the case I lose my password I can recover it."**
+
+- **Actions**:
+    * *User access the signup page in the navbar*
+
+<details>
+    <summary>View image of the steps to create and login an account</summary>
+
+![Register Page access in the navbar]()
+![Fill up details]()
+![Verify-email]()
+![Email confirmation]()
+![Account confirmed]()
+![Ready to login]()
+![Logged-in]()
+
+</details>
+
+<details>
+    <summary>View image of the steps to recover password</summary>
+
+![Fill up details]()
+![Verify-email]()
+![Email confirmation]()
+![changed]()
+![Ready to loin]()
+
+
+</details>
+
+ - Expected result: *To create an account without issues and recover password*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
 ## Bugs
 
 Some of the main bugs found during the development of this project was :
