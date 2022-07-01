@@ -391,6 +391,7 @@ Some of the main bugs found during the development of this project was :
 
 - Horizontal scroll bug, was fixed by setting the HTML tag:  max-width: 100%; overflow-x: hidden;
 
+- Review user wasn't appearing properly in the template. It was fixed by doing a better logic to get the current user.
 
 ## Deployment
 

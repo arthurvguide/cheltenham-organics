@@ -64,9 +64,9 @@ def product_detail(request, product_id):
 
             if request.user.is_authenticated and review_form.is_valid():
 
-                review_form.user = current_user
                 review = review_form.save(commit=False)
                 review.product = product
+                review.user = current_user.user
                 review.save()
                 product.save()
 
