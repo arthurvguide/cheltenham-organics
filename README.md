@@ -478,7 +478,8 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 ![Product Details](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/product-details.PNG)
 
 </details>
- - Result: *Works as intended*
+
+ - Actual result: *Works as intended*
 
  [Back to Table of contents](#table-of-contents)
 
@@ -495,11 +496,33 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 
 ![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/product-details.PNG)
 ![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/wishlist-in.PNG)
-![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/removed.PNG)
-![Added to wish list](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/empty.PNG)
+![Removed from wishlist](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/removed.PNG)
+![Removed from wishlist](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/wishlist/empty.PNG)
 
 </details>
- - Result: *Works as intended*
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
+ ### Logged-in user add a comment and delete.
+
+ **"User can review a product"**
+
+- **Actions**:
+    * *In the product detail page, add a comment*
+    * *In the product detail page, remove the comment if you are the owner.*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Add a comment](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/reviews/add-review.PNG)
+![See the comment](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/reviews/see-review.PNG)
+![Delete the comment](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/reviews/delete-review.PNG)
+
+</details>
+
+ - Actual result: *Works as intended*
 
  [Back to Table of contents](#table-of-contents)
 
