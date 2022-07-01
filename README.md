@@ -1,13 +1,4 @@
 
-BUGS FOUND:
-Slidebar does not work properly on aulth pages
-Delivery banner and footer horizontal scroll - fix setting   max-width: 100%;
-  overflow-x: hidden;
-- Heroku wasnt posting to S3, just receiving 
-Product details:
-- maybe remove image url or host imgs on cloud
-
-
 # [Cheltenham Organics](https://cheltenham-organics.herokuapp.com/)
 ![](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/project-img.PNG)
 
@@ -385,9 +376,20 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 
 - [Check the HTML Validation](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/project-screenshots/html-validation.JPG).
 
+- Responsivity was fully tested using Google Chrome Inspect
+
 
 ## Testing
- 
+
+## Bugs
+
+Some of the main bugs found during the development of this project was :
+
+- Heroku is not being able to POST to the S3 bucket, just GETTING. The way to fix that was by creating an AWS_SECRET_ACCESS_KEY which did not contain "/" on it. 
+
+- Horizontal scroll bug, was fixed by setting the HTML tag:  max-width: 100%; overflow-x: hidden;
+- Heroku wasnt posting to S3, just receiving 
+
 ## Deployment
 
 ### Forking the GitHub Repository
@@ -437,6 +439,8 @@ The steps to take are:
     - Enable public access for your bucket so users can access and use the services on your website (upload, view, download, etc). More info can be read in the official       documentation at https://aws.amazon.com/s3/
 
 ## Credits
+
+- Credits for Code Institute Boutique Ado project which was used as inspiration for many aspects of this project. I credited Code Institute in direct in the code as well.
 
 #### Content
  * All content was written by me.
