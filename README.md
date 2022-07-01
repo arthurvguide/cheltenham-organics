@@ -526,6 +526,30 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 
  [Back to Table of contents](#table-of-contents)
 
+  ### User can manage the bag.
+
+ **"Add to bag, remove from bag and update bag"**
+
+- **Actions**:
+    * *In the product detail page, add a product to the bag*
+    * *In the bag page, update quantity*
+    * *In the bag page, remove item*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Add to bag](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/bag/add-to-bag.PNG)
+![Added to bag](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/bag/added-to-bag.PNG)
+![update quantity](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/bag/update-qty.PNG)
+![remove item](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/bag/remove%20from%20bag.PNG)
+![bag empty](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/bag/bag-empty.PNG)
+
+</details>
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
   ### User complete a purchase and if logged-in, see in the history order.
 
  **"User can complete a purchase and give a feedback once they think it's right to do"**
