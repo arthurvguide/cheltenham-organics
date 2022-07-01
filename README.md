@@ -526,6 +526,28 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 
  [Back to Table of contents](#table-of-contents)
 
+  ### User complete a purchase and if logged-in, see in the history order.
+
+ **"User can complete a purchase and give a feedback once they think it's right to do"**
+
+- **Actions**:
+    * *Add product to bag, and follow the proccess*
+
+<details>
+    <summary>View image of the steps</summary>
+
+![Go to checkout page](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/checkout/checkout-btn.PNG)
+![fill up form](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/checkout/fill-up-form.PNG)
+![order placed](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/checkout/order-placed.PNG)
+![order in profile](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/checkout/order-in-profile.PNG)
+![feedback given](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/checkout/feedback.PNG)
+
+</details>
+
+ - Actual result: *Works as intended*
+
+ [Back to Table of contents](#table-of-contents)
+
 
 ## Bugs
 
