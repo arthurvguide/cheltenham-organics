@@ -432,10 +432,12 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 ![Register Page access in the footer](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/newsletter/newsletter.PNG)
 ![Mailchimp](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/newslleter/mail-chimp.PNG)
 
-
- - Expected result: *To be signedup in the newsletter without issues and the admin get my email*
+</details>
+ - Expected result: *To be signed-in  in the newsletter without issues and the admin get my email*
 
  - Actual result: *Works as intended*
+
+
 
  [Back to Table of contents](#table-of-contents)
 
@@ -454,6 +456,7 @@ Use card details for it: 4242 4242 4242 4242 - CVC and 5-number postal code at t
 ![Success-message](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/created.PNG)
 ![User can see the products](https://github.com/arthurvguide/cheltenham-organics/blob/main/docs/tests/products/user-can-see.PNG)
 
+</details>
 
  - Expected result: *Admin to create a product and be viewed by the user*
 
