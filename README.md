@@ -388,7 +388,7 @@ Some of the main bugs found during the development of this project was :
 - Heroku is not being able to POST to the S3 bucket, just GETTING. The way to fix that was by creating an AWS_SECRET_ACCESS_KEY which did not contain "/" on it. 
 
 - Horizontal scroll bug, was fixed by setting the HTML tag:  max-width: 100%; overflow-x: hidden;
-- Heroku wasnt posting to S3, just receiving 
+
 
 ## Deployment
 
