@@ -3,7 +3,8 @@ checkout/views.py: views to display all pages in the checkout app.
 Credit for Code Institute's Boutique Ado project
 """
 
-from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import HttpResponse
 from django.views.decorators.http import require_POST
 from django.contrib import messages
 from django.conf import settings
@@ -19,6 +20,7 @@ from bag.contexts import bag_contents
 
 import stripe
 import json
+
 
 @require_POST
 def cache_checkout_data(request):
@@ -71,7 +73,7 @@ def checkout(request):
                             quantity=item_data,
                         )
                     order_line_item.save()
-                   
+
                 except Product.DoesNotExist:
                     messages.error(request, (
                         "Product not found."
@@ -101,23 +103,22 @@ def checkout(request):
             currency=settings.STRIPE_CURRENCY,
         )
 
-
     if request.user.is_authenticated:
-            try:
-                profile = UserProfile.objects.get(user=request.user)
-                order_form = OrderForm(initial={
-                    'full_name': profile.user.get_full_name(),
-                    'email': profile.user.email,
-                    'phone_number': profile.default_phone_number,
-                    'country': profile.default_country,
-                    'postcode': profile.default_postcode,
-                    'town_or_city': profile.default_town_or_city,
-                    'street_address1': profile.default_street_address1,
-                    'street_address2': profile.default_street_address2,
-                    'county': profile.default_county,
-                })
-            except UserProfile.DoesNotExist:
-                order_form = OrderForm()
+        try:
+            profile = UserProfile.objects.get(user=request.user)
+            order_form = OrderForm(initial={
+                'full_name': profile.user.get_full_name(),
+                'email': profile.user.email,
+                'phone_number': profile.default_phone_number,
+                'country': profile.default_country,
+                'postcode': profile.default_postcode,
+                'town_or_city': profile.default_town_or_city,
+                'street_address1': profile.default_street_address1,
+                'street_address2': profile.default_street_address2,
+                'county': profile.default_county,
+            })
+        except UserProfile.DoesNotExist:
+            order_form = OrderForm()
     else:
         order_form = OrderForm()
 
@@ -158,7 +159,7 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-    
+
     messages.success(request, f'Order successfully processed! \
         Your order number is {order_number}.')
 
